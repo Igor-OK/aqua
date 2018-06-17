@@ -110,3 +110,109 @@ svg path#letter-diu {
   animation-duration: 1s;
   animation-delay: 6.71s;
 }
+
+
+svg path#letter-ri {
+  stroke-dasharray: 106;
+  stroke-dashoffset: 106;
+  animation-duration: 0.416s;
+  animation-delay: 8.06s;
+}
+svg path#letter-i {
+  stroke-dasharray: 49;
+  stroke-dashoffset: 49;
+  animation-duration: 0.2s;
+  animation-delay: 8.58s;
+}
+svg path#letter-su {
+  stroke-dasharray: 107;
+  stroke-dashoffset: 107;
+  animation-duration: 0.52s;
+  animation-delay: 8.88s;
+}
+svg path#letter-nk {
+  stroke-dasharray: 104;
+  stroke-dashoffset: 104;
+  animation-duration: 0.416s;
+  animation-delay: 9.45s;
+}
+svg path#letter-ka {
+  stroke-dasharray: 82;
+  stroke-dashoffset: 82;
+  animation-duration: 0.324s;
+  animation-delay: 9.824s;
+}
+
+
+
+svg path#letter-ii {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation-duration: 0.2s;
+  animation-delay: 10.398s;
+}
+
+
+svg path#letter-jivopi {
+  stroke-dasharray: 444;
+  stroke-dashoffset: 444;
+  animation-duration: 1.776s;
+  animation-delay: 10.848s;
+}
+svg path#letter-si {
+  stroke-dasharray: 97;
+  stroke-dashoffset: 97;
+  animation-duration: 0.388s;
+  animation-delay: 12.674s;
+}
+
+
+
+svg path#letter-a {
+  stroke-dasharray: 315;
+  stroke-dashoffset: 315;
+  animation-duration: 1.256s;
+  animation-delay: 13.462s;
+}
+svg path#letter-k {
+  stroke-dasharray: 102;
+  stroke-dashoffset: 102;
+  animation-duration: 0.408s;
+  animation-delay: 14.818s;
+}
+svg path#letter-kv {
+  stroke-dasharray: 330;
+  stroke-dashoffset: 330;
+  animation-duration: 1.32s;
+  animation-delay: 15.276s;
+}
+svg path#letter-va {
+  stroke-dasharray: 74;
+  stroke-dashoffset: 74;
+  animation-duration: 0.295s;
+  animation-delay: 16.596s;
+}
+svg path#letter-r {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation-duration: 0.88s;
+  animation-delay: 16.991s;
+}
+svg path#letter-el {
+  stroke-dasharray: 302;
+  stroke-dashoffset: 302;
+  animation-duration: 1.208s;
+  animation-delay: 17.971s;
+}
+
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
