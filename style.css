@@ -55,3 +55,58 @@ body {
   animation-timing-function: linear;
 }
 
+svg path#letter-dob {
+  stroke-dasharray: 248;
+  stroke-dashoffset: 248;
+  animation-duration: 0.99s;
+  animation-delay: 0s;
+}
+svg path#letter-br {
+  stroke-dasharray: 106;
+  stroke-dashoffset: 106;
+  animation-duration: 0.42s;
+  animation-delay: 1.1s;
+}
+svg path#letter-ro {
+  stroke-dasharray: 51;
+  stroke-dashoffset: 51;
+  animation-duration: 0.2s;
+  animation-delay: 1.61s;
+}
+
+
+
+svg path#letter-pojalova {
+  stroke-dasharray: 560;
+  stroke-dashoffset: 560;
+  animation-duration: 2.24s;
+  animation-delay: 2.06s;
+}
+svg path#letter-at {
+  stroke-dasharray: 147;
+  stroke-dashoffset: 147;
+  animation-duration: 0.59s;
+  animation-delay: 4.35s;
+}
+
+
+svg path#letter-v {
+  stroke-dasharray: 120;
+  stroke-dashoffset: 120;
+  animation-duration: 0.48s;
+  animation-delay: 5.19s;
+}
+
+
+svg path#letter-stu {
+  stroke-dasharray: 185;
+  stroke-dashoffset: 185;
+  animation-duration: 0.74s;
+  animation-delay: 5.92s;
+}
+svg path#letter-diu {
+  stroke-dasharray: 252;
+  stroke-dashoffset: 252;
+  animation-duration: 1s;
+  animation-delay: 6.71s;
+}
