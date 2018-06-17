@@ -1,0 +1,57 @@
+body {
+  background-color: #fff;
+}
+
+.start-animation{
+  transform: scale(0.5, 0.5) translateY(-755px);
+  z-index: 200;
+}
+
+.hello{
+  height: 100vh;
+  background-image: url(images/work-space.jpg);
+  background-size: 150%;
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
+}
+.paper{
+  width: 500px;
+  height: 510px;
+  background-color: white;
+  position: relative;
+  left: calc(50% - 250px);
+  top: 102px;
+  box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
+}
+.water-colour-gif{
+  height: 250px;
+  width: 300px;
+  position: relative;
+  left: calc(50% - 150px);
+  top: 270px;
+  background-image: url(images/water-colour-dance.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.start-animation svg {
+  max-width: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  top:100px;
+  z-index: 200;
+  opacity: 0.55;
+}
+.start-animation svg path {
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: draw;
+  animation-timing-function: linear;
+}
+
