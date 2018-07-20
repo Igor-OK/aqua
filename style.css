@@ -6,6 +6,16 @@ body {
 h1, h2, h3{
   text-align: center;
 }
+.container{
+  width:800px;
+  margin:auto;
+  margin-top: 30px;
+  /*font-family: 'Philosopher', sans-serif;*/
+  font-family: 'El Messiri', sans-serif;
+  /*font-family: 'Comfortaa', cursive;*/
+}
+
+/*===========intro section============*/
 
 .start-animation{
   z-index: 200;
@@ -15,6 +25,9 @@ h1, h2, h3{
   top: 100px;
   left: calc(50% - 250px);;
 }
+svg {
+  z-index: 1;
+}
 .under-animation{
   position: absolute;
   z-index: 199;
@@ -23,14 +36,15 @@ h1, h2, h3{
   top: 0;
   left: 0;
   background-color: white;
-  animation: white-dissapear 9s  1;
-  opacity: 0;
+/*  background-color: white;
+  animation: white-dissapear 9s  1;*/
+  /*opacity: 0;*/
 }
-@keyframes white-dissapear {
+/*@keyframes white-dissapear {
   0%   { opacity: 1; }
   85% {opacity: 1;}
   100% { opacity: 0; }
-}
+}*/
 
 .header{
   height: 100vh;
@@ -58,19 +72,24 @@ h1, h2, h3{
   background-image: url(images/water-colour-dance.gif);
   background-size: contain;
   background-repeat: no-repeat;
-  animation: water-girl 13s;
+  opacity:0;
+  /*animation: water-girl 13s;*/
 }
-@keyframes water-girl{
+/*@keyframes water-girl{
   0% { opacity:0; }
   90% { opacity:0; }
   100% { opacity:1; }
-}
+}*/
 
+
+
+/*==============seo-text section=================*/
 .main-text{
   color:#020202;
   background-color: coral;
   padding-top: 70px;
   padding-bottom: 50px;
+  z-index: 300;
 }
 .studia{
   width: 200px;
@@ -83,16 +102,12 @@ h1, h2, h3{
   margin-left: 10px;
 }
 
-.container{
-  width:800px;
-  margin:auto;
-  margin-top: 30px;
-  /*font-family: 'Philosopher', sans-serif;*/
-  font-family: 'El Messiri', sans-serif;
-  /*font-family: 'Comfortaa', cursive;*/
-}
+
+
+/*============== courses-section ===============*/
 .courses{
   margin-top:70px;
+  background-color: lightgrey;
 }
 .courses h2{
   margin-bottom: 50px;
@@ -109,14 +124,27 @@ h1, h2, h3{
   width: 310px;
   height: 400px;
   margin-bottom: 55px;
+  background-color: white;
   overflow: hidden;
   border: 1px solid grey;
+  border-radius: 5px;
   display: inline-block;
+  opacity:0;
+  transform: scale(0.87);
+  transition: all 0.35s ease-in-out;
+  cursor: pointer;
+}
+.course-card.fade-in{
+  opacity:1;
+  transform: scale(1);
 }
 .course-card h3{
   margin: 0;
   line-height: 17px;
   margin-bottom: 10px;
+}
+.course-description{
+
 }
 .course-about p{
   margin: 0;
@@ -129,30 +157,41 @@ h1, h2, h3{
 .course-image{
   height: 155px;
   overflow: hidden;
+
 }
 .course-image img{
   width: 100%;
+  transform: scale(1.13);
+  transition: all 0.5s ease-in-out;
 }
-
+.course-card:hover img{
+  transform: scale(1);
+}
+.course-card:hover{
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
+}
 
 
 
 /*-----------SVG-ANIMATION------------*/
 
-.start-animation{
+/*.start-animation{
   animation-name: signature;
-  animation-duration: 7s; /* or: Xms */
+  animation-duration: 7s; 
   animation-iteration-count: 1;
-  /*animation-direction: alternate;*/
-  animation-timing-function: ease; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
-  animation-fill-mode: forwards; /* or: backwards, both, none */
-  animation-delay: 0s; /* or: Xms */
+  animation-timing-function: ease;  or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) 
+  animation-fill-mode: forwards; 
+  animation-delay: 0s; 
 }
 @keyframes signature {
   0%   { transform: scale(2); }
   85%  { transform: scale(2); }
   100% { transform: scale(1); }
-}
+}*/
 
 
 .start-animation svg {
@@ -194,8 +233,6 @@ svg path#letter-ro {
   animation-delay: 1.61s;
 }
 
-
-
 svg path#letter-pojalova {
   stroke-dasharray: 560;
   stroke-dashoffset: 560;
@@ -209,14 +246,12 @@ svg path#letter-at {
   animation-delay: 4.35s;
 }
 
-
 svg path#letter-v {
   stroke-dasharray: 120;
   stroke-dashoffset: 120;
   animation-duration: 0.48s;
   animation-delay: 5.19s;
 }
-
 
 svg path#letter-stu {
   stroke-dasharray: 185;
@@ -230,7 +265,6 @@ svg path#letter-diu {
   animation-duration: 1s;
   animation-delay: 6.71s;
 }
-
 
 svg path#letter-ri {
   stroke-dasharray: 106;
@@ -263,15 +297,12 @@ svg path#letter-ka {
   animation-delay: 9.824s;
 }
 
-
-
 svg path#letter-ii {
   stroke-dasharray: 50;
   stroke-dashoffset: 50;
   animation-duration: 0.2s;
   animation-delay: 10.398s;
 }
-
 
 svg path#letter-jivopi {
   stroke-dasharray: 444;
@@ -285,7 +316,6 @@ svg path#letter-si {
   animation-duration: 0.388s;
   animation-delay: 12.674s;
 }
-
 
 
 svg path#letter-a {
@@ -331,8 +361,8 @@ svg path#letter-el {
     stroke-dashoffset: 0;
   }
 }
-@keyframes show {
+/*@keyframes show {
   to {
     opacity: 1;
   }
-}
+}*/
