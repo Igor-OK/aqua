@@ -28,6 +28,14 @@ $(document).ready(function(){
 	.setPin('.courses',{pushFollowers: false})
 	.addTo(controller);
 
+	var pinIntroScene4 = new ScrollMagic.Scene({
+		triggerElement: '.header',
+		triggerHook: 0,
+		duration: '200%'  // столько крутит до начала движения
+	})
+	.setPin('.find-us',{pushFollowers: false})
+	.addTo(controller);
+
 	//================ Starting tween scene scrollmagic (already works)
 
 	var tweenHandyText = TweenMax.to('.start-animation', 1, {transform:'scale(1)', ease: Linear.easeNone});
