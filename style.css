@@ -73,10 +73,10 @@ svg {
 .main-text{
   color:white;
   padding-bottom: 25px;
-  height: 2000px;
+  height: 1650px;
 }
 .main-text h2{
-  padding-
+  
 }
 .main-text-content{
   position: absolute;
@@ -90,81 +90,112 @@ svg {
 #canvas-basic {
   display: block;
   width: 100%;
-  height: 2000px!important;
+  height: 1650px!important;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
+
+/*offset to left for 30px*/
 .main-block-1{
-  display: block;
-  position: absolute;
-  background-color: rgba(0,0,0,0.55);
   width: 400px;
   padding: 15px;
   top: 120px;
-  left: 0px;
+  left: -40px;
   line-height: 0.85rem;
   font-size: 14px;
   z-index: 10;
 }
 .main-block-2{
-  display: block;
-  position: absolute;
-  background-color: rgba(0,0,0,0.55);
   width: 500px;
   padding: 15px;
-  top: 550px;
-  right: 0px;
+  top: 505px;
+  right: 30px;
   line-height: 0.85rem;
   font-size: 14px;
+  z-index: 11;
 }
 .main-block-3{
-  display: block;
-  position: absolute;
-  background-color: rgba(0,0,0,0.55);
-  width: 500px;
+  width: 555px;
   padding: 15px;
-  top: 990px;
-  left: 0px;
+  top: 1010px;
+  left: -50px;
   line-height: 0.85rem;
   font-size: 14px;
+  z-index: 12;
 }
 .main-block-4{
-  display: block;
-  position: absolute;
-  background-color: rgba(0,0,0,0.55);
-  width: 500px;
+  width: 650px;
   padding: 15px;
-  top: 1290px;
-  right: 0px;
+  top: 1350px;
+  right: 100px;
   line-height: 0.85rem;
   font-size: 14px;
 }
 .main-img-1{
-  display: block;
-  position: absolute;
-  background-color: rgba(0,0,0,0.3);
   width: 450px;
-  padding: 15px;
+  padding: 10px;
   top: 140px;
-  right: -20px;
+  right: 10px;
 }
 .main-img-2{
+  width: 200px;
+  padding: 10px;
+  top: 330px;
+  right: 60px;
+}
+.main-img-3{
+  width: 300px;
+  padding: 10px;
+  top: 530px;
+  left: -30px;
+}
+.main-img-4{
+  width: 150px;
+  padding: 5px;
+  top: 755px;
+  left: -5px;
+}
+.main-img-5{
+  width: 700px;
+  padding: 10px;
+  top: 888px;
+  left: 25px;
+}
+.main-img-6{
+  width: 200px;
+  padding: 10px;
+  top: 1100px;
+  right: 15px;
+}
+
+.main-block-1,
+.main-block-2,
+.main-block-3,
+.main-block-4{
+  display: block;
+  position: absolute;
+  background-color: rgba(0,0,0,0.55);
+}
+
+.main-img-1,
+.main-img-2,
+.main-img-3,
+.main-img-4,
+.main-img-5,
+.main-img-6{
   display: block;
   position: absolute;
   background-color: rgba(0,0,0,0.3);
-  width: 250px;
-  padding: 15px;
-  top: 340px;
-  right: 30px;
 }
 
 .main-img-1 img,
 .main-img-2 img,
 .main-img-3 img,
 .main-img-4 img,
-.main-img-5 img{
+.main-img-5 img,
+.main-img-6 img{
   width: 100%;
 }
 

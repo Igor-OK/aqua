@@ -108,9 +108,13 @@ $(document).ready(function(){
 	    states : {
 	        "default-state": {
 	            gradients: [
+	            	['#02AAB0', '#00CDAC'],
 	                ['#AA076B', '#61045F'],
-	                ['#02AAB0', '#00CDAC'],
-	                ['#DA22FF', '#9733EE']
+	                ['#DA22FF', '#9733EE'],
+	                ['#1c92d2', '#f2fcfe'],
+	                ['#ff9966', '#ff5e62'],
+	                ['#22c1c3', '#fdbb2d'],
+	                ['#fc4a1a', '#f7b733']
 	            ]
 	        }
 	    }
@@ -119,7 +123,7 @@ $(document).ready(function(){
 	// resize canvas for according content (.main text)
 	var gradientCanvas = document.getElementById('canvas-basic');
 	var mainText = document.querySelector('.main-text-content');
-	gradientCanvas.style.height = mainText.offsetHeight+120+'px';
+	// gradientCanvas.style.height = mainText.offsetHeight+120+'px';
 
 
 
