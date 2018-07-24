@@ -33,6 +33,14 @@ $(document).ready(function(){
 		triggerHook: 0,
 		duration: '200%'  // столько крутит до начала движения
 	})
+	.setPin('.teachers',{pushFollowers: false})
+	.addTo(controller);
+
+	var pinIntroScene5 = new ScrollMagic.Scene({
+		triggerElement: '.header',
+		triggerHook: 0,
+		duration: '200%'  // столько крутит до начала движения
+	})
 	.setPin('.find-us',{pushFollowers: false})
 	.addTo(controller);
 
@@ -68,7 +76,7 @@ $(document).ready(function(){
 	.addTo(controller)
 
 
-	// ===============loop for courses
+	// ===============loop for appearing of courses-card
 	$('.course-card').each(function(){
 			//build a scene of appearing of courses (one by one)
 		var courseScene = new ScrollMagic.Scene({
@@ -112,6 +120,117 @@ $(document).ready(function(){
 	var gradientCanvas = document.getElementById('canvas-basic');
 	var mainText = document.querySelector('.main-text-content');
 	gradientCanvas.style.height = mainText.offsetHeight+120+'px';
+
+
+
+
+	// ParticlesJS Config.
+	particlesJS("particles-js", {
+		particles: {
+			number: {
+				value: 80,
+				density: {
+					enable: true,
+					value_area: 700
+				}
+			},
+			color: {
+				value: "#000000"
+			},
+			shape: {
+				type: "circle",
+				stroke: {
+					width: 0,
+					color: "#eeeeee"
+				},
+				polygon: {
+					nb_sides: 5
+				}
+			},
+			opacity: {
+				value: 0.5,
+				random: false,
+				anim: {
+					enable: false,
+					speed: 1,
+					opacity_min: 0.1,
+					sync: false
+				}
+			},
+			size: {
+				value: 2,
+				random: true,
+				anim: {
+					enable: false,
+					speed: 40,
+					size_min: 0.1,
+					sync: false
+				}
+			},
+			line_linked: {
+				enable: true,
+				distance: 150,
+				color: "#00356B", //line color setted here
+				opacity: 0.7,
+				width: 1
+			},
+			move: {
+				enable: true,
+				speed: 4,
+				direction: "none",
+				random: false,
+				straight: false,
+				out_mode: "out",
+				bounce: false,
+				attract: {
+					enable: false,
+					rotateX: 600,
+					rotateY: 1200
+				}
+			}
+		},
+		interactivity: {
+			detect_on: "canvas",
+			events: {
+				onhover: {
+					enable: true,
+					mode: "grab"
+				},
+				onclick: {
+					enable: true,
+					mode: "push"
+				},
+				resize: true
+			},
+			modes: {
+				grab: {
+					distance: 140,
+					line_linked: {
+						opacity: 1
+					}
+				},
+				bubble: {
+					distance: 400,
+					size: 40,
+					duration: 2,
+					opacity: 8,
+					speed: 3
+				},
+				repulse: {
+					distance: 200,
+					duration: 0.4
+				},
+				push: {
+					particles_nb: 4
+				},
+				remove: {
+					particles_nb: 2
+				}
+			}
+		},
+		retina_detect: true
+	});
+
 
 
 
