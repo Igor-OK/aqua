@@ -41,6 +41,14 @@ $(document).ready(function(){
 		triggerHook: 0,
 		duration: '200%'  // столько крутит до начала движения
 	})
+	.setPin('.our-students',{pushFollowers: false})
+	.addTo(controller);
+
+	var pinIntroScene5 = new ScrollMagic.Scene({
+		triggerElement: '.header',
+		triggerHook: 0,
+		duration: '200%'  // столько крутит до начала движения
+	})
 	.setPin('.find-us',{pushFollowers: false})
 	.addTo(controller);
 
@@ -197,7 +205,7 @@ $(document).ready(function(){
 	      { transform: `translate(${to.x}rem, ${to.y}rem)` }
 	    ],
 	    {
-	      duration: (Math.random() + 1) * 2000, // random duration
+	      duration: (Math.random() + 1) * 3000, // random duration
 	      direction: "alternate",
 	      fill: "both",
 	      iterations: Infinity,

@@ -205,10 +205,14 @@ svg {
 .courses{
   margin-top:-30px;
   padding-top: 30px;
-  background-color: #EDEDED;
+  /*background-color: #EDEDED;*/
+  background-image: url(images/oboi.jpg);
+  background-repeat: repeat;
 }
 .courses h2{
   margin-bottom: 50px;
+  color: white;
+  background-color: rgba(0,0,0,0.55)
 }
 .courses-list{
   display: flex;
@@ -224,6 +228,7 @@ svg {
   height: 400px;
   /*cursor: pointer;*/
   margin-bottom: 55px;
+  padding: 10px;
   background-color: white;
   overflow: hidden;
   border: 1px solid grey;
@@ -231,13 +236,13 @@ svg {
   display: inline-block;
   opacity:0;
   box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75)
-/*  transform: scale(0.87);
-  transition: all 0.3s ease-in-out;*/
+  transform: scale(0.87) translateY(-20px);
+  transition: all 0.3s ease-in-out;
 
 }
 .course-card.fade-in{
   opacity:1;
-  transform: scale(1);
+  transform: scale(1) translateY(0);
 }
 .course-card h3{
   margin: 0;
@@ -279,16 +284,13 @@ svg {
  /*================TEACHERS============*/
 .teachers{
   display: block;
-  /*height: 100vh;*/
-  height: 777px;
-  border-bottom: 2px solid grey;
-  /*background-color: coral;*/
+  height: 710px;
  }
  .balls{
   position: absolute;
-  height: 400px;
+  height: 500px;
   width: 1000px;
-  top: -70px;
+  top: -150px;
   left: calc(50% - 450px);
 }
 .teachers h2{
@@ -306,9 +308,6 @@ svg {
   position: absolute;
   top: 100px;
   left: calc(50% - 400px);
-  /*background-image: url(images/girls-up-1.png);*/
-  /*background-position: bottom;*/
-  /*background-repeat: no-repeat;*/
   z-index: 10;
   transition: all 0.55s ease-out;
   max-width: 800px
@@ -372,6 +371,14 @@ svg {
 
 
 
+/*----------------------OUR STUDENTS section*/
+
+.our-students{
+  height: 555px;
+  background-color: coral;
+}
+
+
 
 
 
@@ -383,7 +390,6 @@ svg {
   height: 700px;
   text-align: center;
   display: block; 
-  background-color: red!important;
   /*ВКЛЮЧИТЬ ТУТ*/
 }
 .ways-to-studio{
