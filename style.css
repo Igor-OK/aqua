@@ -62,6 +62,7 @@ svg {
   left: calc(50% - 150px);
   top: 270px;
   background-image: url(images/water-colour-dance.gif);
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   opacity:0;
@@ -91,10 +92,8 @@ svg {
   display: block;
   width: 100%;
   height: 1650px!important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  margin-top: -1px;
+
 }
 
 /*offset to left for 30px*/
@@ -370,12 +369,21 @@ svg {
 
 
 
-
 /*----------------------OUR STUDENTS section*/
 
 .our-students{
-  height: 555px;
-  background-color: coral;
+  height: 800px;
+  /*background-color: coral;*/
+  background-image: url(images/purple-wood.jpg);
+  background-repeat: repeat;
+}
+.our-students .container{
+  padding-top: 25px;
+}
+.way img{
+  max-width: 100%;
+  cursor: pointer;
+  max-height: 180px;
 }
 
 

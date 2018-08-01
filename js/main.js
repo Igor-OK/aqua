@@ -216,6 +216,21 @@ $(document).ready(function(){
 
 
 
+	//-------------------- handler for youtube-videos
+
+	$('.from-matus').click(function (event) {
+	    var videoSrc = 'https://www.youtube.com/embed/uS4eDDe3pVg';
+	    event.preventDefault();
+	    $(this).html('<iframe width="320" height="180" src="' + videoSrc + '" frameborder="0" allowfullscreen></iframe>')
+	});
+
+	$('.from-sport').click(function (event) {
+	    var videoSrc = 'https://www.youtube.com/embed/LvX8KUD-3BQ';
+	    event.preventDefault();
+	    $(this).html('<iframe width="320" height="180" src="' + videoSrc + '" frameborder="0" allowfullscreen></iframe>')
+	}) 
+
+
 
 
 	// // ParticlesJS Config. -==================== ЛЕТАЮЩИЕ КОЗЯВКИ (ОЧЕНЬ БЪЁТ ПО ПРОИЗВОДИТЕЛЬНОСТИ)

@@ -7,6 +7,39 @@
 	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+	<noscript>
+		<style>
+			.es-carousel ul{
+				display:block;
+			}
+		</style>
+	</noscript>
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+				<div class="rg-image-nav">
+					<a href="#" class="rg-image-nav-prev">Previous Image</a>
+					<a href="#" class="rg-image-nav-next">Next Image</a>
+				</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+			<div class="rg-caption-wrapper">
+				<div class="rg-caption" style="display:none;">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</script>
+
+
 </head>
 <body>
 	<div class="header">
@@ -362,29 +395,74 @@
 	</section>
 
 
+
 	<section class="our-students">
+		<div class="container">
+			<h2>Работы наших студентов.</h2>
+			<div id="rg-gallery" class="rg-gallery">
+			<div class="rg-thumbs">
+				<!-- Elastislide Carousel Thumbnail Viewer -->
+				<div class="es-carousel-wrapper">
+					<div class="es-nav">
+						<span class="es-nav-prev">Previous</span>
+						<span class="es-nav-next">Next</span>
+					</div>
+					<div class="es-carousel">
+						<ul>
+							<li><a href="#"><img src="images/images/thumbs/1.jpg" data-large="images/images/1.jpg" alt="image01" data-description="Дельфины на закате" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/2.jpg" data-large="images/images/2.jpg" alt="image02" data-description="Перцы в бокале" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/3.jpg" data-large="images/images/3.jpg" alt="image03" data-description="Сакура" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/4.jpg" data-large="images/images/4.jpg" alt="image04" data-description="Лилия" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/5.jpg" data-large="images/images/5.jpg" alt="image05" data-description="Голая натура" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/6.jpg" data-large="images/images/6.jpg" alt="image06" data-description="Натюрморт с цыбулей" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/7.jpg" data-large="images/images/7.jpg" alt="image07" data-description="Натюрморт с виноградом" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/8.jpg" data-large="images/images/8.jpg" alt="image08" data-description="Натюрморт с грушами" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/9.jpg" data-large="images/images/9.jpg" alt="image09" data-description="Натюрморт творческая атмосфера" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/10.jpg" data-large="images/images/10.jpg" alt="image10" data-description="Разные работы" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/11.jpg" data-large="images/images/11.jpg" alt="image11" data-description="Натюоморт с мандаринами" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/12.jpg" data-large="images/images/12.jpg" alt="image12" data-description="Натюрморт с латунным горшком" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/13.jpg" data-large="images/images/13.jpg" alt="image13" data-description="Натюрморт с кувшином" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/14.jpg" data-large="images/images/14.jpg" alt="image14" data-description="Натюрморт простым карандашом" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/15.jpg" data-large="images/images/15.jpg" alt="image15" data-description="Череп" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/16.jpg" data-large="images/images/16.jpg" alt="image16" data-description="Натюрморт карандашом" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/17.jpg" data-large="images/images/17.jpg" alt="image17" data-description="Березы" /></a></li>
+							<li><a href="#"><img src="images/images/thumbs/18.jpg" data-large="images/images/18.jpg" alt="image18" data-description="Голова ребенка" /></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Elastislide Carousel Thumbnail Viewer -->
+			</div><!-- rg-thumbs -->
+		</div><!-- rg-gallery -->
+		</div>
 		
 	</section>
 
+
+
+
 	<section class="find-us" id="particles-js">
 		<div class="container">
-			<h2>Как добраться.</h2>
+			<h2>Контакты.</h2>
 			<p>Студия "Акварель" находится по адресу г.Минск, ул. Матусевича 23, в здании бывшего детского сада, 2 этаж, аудитория 208</p>
+			<div class="phone">	Звоните по телефону <a href="tel:+375296633164">+375 29 66-33-164</a> </div>
 			<div class="ways-to-studio">
 				<div class="way">
 					<h4>Дорога в студию от перекрёстка Матусевича - Глебки (за 1 минуту)</h4>
-					<!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/uS4eDDe3pVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+					<div class="from-matus">
+						<img src="images/matusevicha.jpg" alt="">
+					</div>
 				</div>
 				<div class="way">
 					<h4>Дорога в студию от станции метро СПОРТИВНАЯ (за 1,5 минуты)</h4>
-				<!-- 	<iframe width="320" height="180" src="https://www.youtube.com/embed/LvX8KUD-3BQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+					<div class="from-sport">
+						<img src="images/sportivnaya.jpg" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="for-map">
-	<!-- 		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c354da8ca4ab1b64cc9cbfc1cff337a1888f34b3e7934d41845cdf963edbabf&amp;source=constructor" width="100%" height="250px" frameborder="0"></iframe> -->
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c354da8ca4ab1b64cc9cbfc1cff337a1888f34b3e7934d41845cdf963edbabf&amp;source=constructor" width="100%" height="250px" frameborder="0"></iframe>
 		</div>
-		
 <!-- GOOGLE MAP -->
 <!-- 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.015277365151!2d27.475572859221096!3d53.91370442797141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc539ff97d167%3A0x18a4e25a6c4ce367!2z0YPQu9C40YbQsCDQnNCw0YLRg9GB0LXQstC40YfQsCAyMywg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1532163852443" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 	</section>
@@ -401,8 +479,15 @@
 	<script src="js/CSSRulePlugin.min.js"></script>
 	<script src="js/animation.gsap.js"></script>
 	<script src="js/granim.min.js"></script>
-	<script src="js/particles.min.js"></script>
+	<!-- <script src="js/particles.min.js"></script> -->
+
 	
+	<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+
+
 <!-- 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
