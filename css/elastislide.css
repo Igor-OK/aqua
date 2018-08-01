@@ -24,6 +24,7 @@
 	height:100%;
 	float:left;
 	display:block;
+	margin-top: -15px;
 }
 .es-carousel ul li a{
 	display:block;

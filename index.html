@@ -3,43 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cтудия Акварель - самая уютная школа рисования в Минске.</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
-
-
-
-
 
 	<link rel="stylesheet" type="text/css" href="css/style-gallery.css" />
 	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
-	<noscript>
-		<style>
-			.es-carousel ul{
-				display:block;
-			}
-		</style>
-	</noscript>
-	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
-		<div class="rg-image-wrapper">
-			{{if itemsCount > 1}}
-				<div class="rg-image-nav">
-					<a href="#" class="rg-image-nav-prev">Previous Image</a>
-					<a href="#" class="rg-image-nav-next">Next Image</a>
-				</div>
-			{{/if}}
-			<div class="rg-image"></div>
-			<div class="rg-loading"></div>
-			<div class="rg-caption-wrapper">
-				<div class="rg-caption" style="display:none;">
-					<p></p>
-				</div>
-			</div>
-		</div>
-	</script>
-
-
 </head>
 <body>
 	<div class="header">
@@ -443,8 +411,9 @@
 	<section class="find-us" id="particles-js">
 		<div class="container">
 			<h2>Контакты.</h2>
-			<p>Студия "Акварель" находится по адресу г.Минск, ул. Матусевича 23, в здании бывшего детского сада, 2 этаж, аудитория 208</p>
+			<p class='adress'>Студия "Акварель" находится по адресу г.Минск, ул. Матусевича 23,<br> в здании бывшего детского сада, 2 этаж, аудитория 208</p>
 			<div class="phone">	Звоните по телефону <a href="tel:+375296633164">+375 29 66-33-164</a> </div>
+			<a href="https://www.instagram.com/studiya.aquarelle/">Мы в Instagram</a>
 			<div class="ways-to-studio">
 				<div class="way">
 					<h4>Дорога в студию от перекрёстка Матусевича - Глебки (за 1 минуту)</h4>
@@ -472,6 +441,25 @@
 
 
 
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+				<div class="rg-image-nav">
+					<a href="#" class="rg-image-nav-prev">Previous Image</a>
+					<a href="#" class="rg-image-nav-next">Next Image</a>
+				</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+			<div class="rg-caption-wrapper">
+				<div class="rg-caption" style="display:none;">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</script>
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/debug.addIndicators.min.js"></script>
@@ -497,11 +485,50 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 	<script src="https://cdn.rawgit.com/sarcadass/granim.js/master/dist/granim.min.js"></script> -->
 
-	
-
 
     <script src="js/main.js"></script>
 
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123176832-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-123176832-1');
+	</script>
+
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter49823563 = new Ya.Metrika2({
+	                    id:49823563,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/49823563" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 
 
 

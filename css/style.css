@@ -10,9 +10,7 @@ h1, h2, h3{
   width:800px;
   margin:auto;
   margin-top: 30px;
-  /*font-family: 'Philosopher', sans-serif;*/
   font-family: 'El Messiri', sans-serif;
-  /*font-family: 'Comfortaa', cursive;*/
 }
 
 /*===========intro section============*/
@@ -40,7 +38,7 @@ svg {
 
 .header{
   height: 100vh;
-  background-image: url(images/work-space.jpg);
+  background-image: url(../images/work-space.jpg);
   background-size: 100%;
   background-position: bottom;
   text-align: center;
@@ -50,10 +48,11 @@ svg {
   width: 360px;
   height: 550px;
   background-color: white;
-  position: relative;
+  position: absolute;
   left: calc(50% - 180px);
-  top: 60px;
+  top: 150px;
   box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
+  z-index: 20;
 }
 .water-colour-gif{
   height: 250px;
@@ -61,7 +60,7 @@ svg {
   position: relative;
   left: calc(50% - 150px);
   top: 270px;
-  background-image: url(images/water-colour-dance.gif);
+  background-image: url(../images/water-colour-dance.gif);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -205,7 +204,7 @@ svg {
   margin-top:-30px;
   padding-top: 30px;
   /*background-color: #EDEDED;*/
-  background-image: url(images/oboi.jpg);
+  background-image: url(../images/oboi.jpg);
   background-repeat: repeat;
 }
 .courses h2{
@@ -374,7 +373,7 @@ svg {
 .our-students{
   height: 800px;
   /*background-color: coral;*/
-  background-image: url(images/purple-wood.jpg);
+  background-image: url(../images/purple-wood.jpg);
   background-repeat: repeat;
 }
 .our-students .container{
@@ -400,6 +399,12 @@ svg {
   display: block; 
   /*ВКЛЮЧИТЬ ТУТ*/
 }
+.find-us h4{
+  margin-top: 5px;
+}
+.find-us .adress{
+  margin-bottom: 5px;
+}
 .ways-to-studio{
   display: flex;
   justify-content: space-around;
@@ -416,8 +421,8 @@ svg {
   background-color: rgba(255, 255, 255, 0.9);
   border: 3px solid white;
 }
-.find-us h2{
-
+.find-us .phone{
+  font-size: 1.5rem;
 }
 
 
@@ -444,7 +449,7 @@ svg {
   z-index: 1;
   display: block;
   width: 100%;
-  top: 505px;
+  top: 525px;
 }
 
 
