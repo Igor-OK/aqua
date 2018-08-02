@@ -17,6 +17,11 @@ h1, h2, h3{
     width:800px;
   }
 }
+@media screen and (max-width: 640px) { 
+  .container{
+    width:90%;
+  }
+}
 
 /*===========intro section============*/
 
@@ -26,7 +31,8 @@ h1, h2, h3{
   height: 500px;
   position: absolute;
   top: 150px;
-  left: calc(50% - 350px);;
+  left: calc(50% - 350px);
+  transform: scale(2.5);
 }
 svg {
   z-index: 1;
@@ -85,14 +91,40 @@ svg {
     width: 460px;
     height: 300px;
     top: 55px;
-    left: calc(50% - 230px);;
+    left: calc(50% - 230px);
   }
   .water-colour-gif{
     height: 250px;
     width: 300px;
     left: calc(50% - 150px);
     top: 250px;
-    opacity:0;
+  }
+}
+
+@media screen and (max-width: 640px) { 
+  .header{
+    background-image: url(../images/work-space-mob.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .start-animation{
+    width: 360px;
+    height: 250px;
+    top: 75px;
+    left: calc(50% - 180px);
+    transform: scale(1.3);
+  }
+  .paper{
+    top: 20%;
+    width: 80%;
+    height: 77%;
+    left: 10%;
+  }
+  .water-colour-gif{
+    height: 45%;
+    width: 70%;
+    left: 15%;
+    top: 45%;
   }
 
 }
@@ -299,8 +331,91 @@ svg {
   #canvas-basic {
     height: 1750px;
   }
+}
+@media screen and (max-width: 640px) { 
+  .main-text{
+    overflow: hidden;
+  }
+  .main-text,
+  #canvas-basic{
+    height: 2750px;
+  }
+  .main-text-content{
+    width: 90%;
+    right: 5%;
+    margin-top: 10px;
+  }
+  .main-text-content h1{
+    font-size: 1.15rem;
+/*    position: absolute;
+    top: 20px;
+    z-index: 22;*/
+  }
+  .main-block-1{
+    width: 90%;
+    top: 230px;
+    left: 0;
+    /*line-height: 0.85rem;*/
+  }
+  .main-block-2{
+    width: 90%;
+    top: 850px;
+    right: 0;
+  }
+  .main-block-3{
+    width: 90%;
+    padding: 15px;
+    top: 1510px;
+    left: 0;
+  }
+  .main-block-4{
+    width: 90%;
+    top: 2260px;
+    right: 0;
+    line-height: 1rem;
+  }
+  .main-block-4 li{
+    margin-bottom: 7px;
+  }
+  .main-img-1{
+    width: 110%;
+    padding: 10px;
+    top: 110px;
+    right: -7%;
+  }
+  .main-img-2{
+    width: 85px;
+    top: 720px;
+    right: -5%;
+    z-index: 22;
+  }
+  .main-img-3{
+    width: 85%;
+    top: 650px;
+    right: -5%;
+  }
+  .main-img-4{
+    width: 65%;
+    top: 2100px;
+    right: auto;
+    left: 50%;
+  }
+  .main-img-5{
+    width: 110%;
+    padding: 10px;
+    top: 1414px;
+    left: -5%;
+  }
+  .main-img-6{
+    width: 65%;
+    top: 1990px;
+    right: 40%;
+  }
 
 }
+
+
+
 
 
 
@@ -309,7 +424,7 @@ svg {
   margin-top:-30px;
   padding-top: 30px;
   /*background-color: #EDEDED;*/
-  background-image: url(../images/oboi.jpg);
+  background-image: url(../images/oboi-3.jpg);
   background-repeat: repeat;
 }
 .courses h2{
@@ -383,6 +498,20 @@ svg {
   -moz-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);*/
 }
+
+@media screen and (max-width: 640px) { 
+  .courses h2{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
 
  /*================TEACHERS============*/
 .teachers{
@@ -476,7 +605,7 @@ svg {
 /*----------------------OUR STUDENTS section*/
 
 .our-students{
-  height: 1200px;
+  height: 800px;
   /*background-color: coral;*/
   background-image: url(../images/purple-wood.jpg);
   background-repeat: repeat;
@@ -493,9 +622,7 @@ svg {
   max-height: 180px;
 }
 @media screen and (max-width: 1400px) { 
-  .our-students{
-    height: 800px;
-  }
+
 }
 
 
@@ -575,15 +702,8 @@ svg {
 
 
 
-
-
-
 /*-----------SVG-ANIMATION------------*/
 
-
-.start-animation{
-  transform: scale(2.5);
-}
 
 .start-animation svg {
   max-width: 80%;
@@ -600,6 +720,7 @@ svg {
 }
 .start-animation svg path {
   animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-name: draw;
   animation-timing-function: linear;

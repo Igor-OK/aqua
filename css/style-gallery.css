@@ -1,7 +1,12 @@
 #rg-gallery{
 	position: absolute;
 	z-index: 55;
-	width: 800px;
+	width: 1200px;
+}
+@media screen and (max-width: 1400px) { 
+	#rg-gallery{
+		width: 800px;
+	}
 }
 .rg-image-wrapper{
 	position:relative;
