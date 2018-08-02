@@ -1,3 +1,8 @@
+#rg-gallery{
+	position: absolute;
+	z-index: 55;
+	width: 800px;
+}
 .rg-image-wrapper{
 	position:relative;
 	padding:20px 30px;
@@ -54,9 +59,11 @@
 	line-height:16px;
 	padding:0 15px;
 	text-transform:uppercase;
+	color: white;
 }
 .rg-view{
 	height:30px;
+	display: none;
 }
 .rg-view a{
 	display:block;

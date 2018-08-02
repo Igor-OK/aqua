@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var pinIntroScene = new ScrollMagic.Scene({
 		triggerElement: '.header',
 		triggerHook: 0,
-		duration: '200%'  // столько крутит до начала движения
+		duration: '150%'  // столько крутит до начала движения!!!!!!!!!!!!!!!!!!!!!!!!! 200%-поменять для всех блоков, когда сделаешь появляющееся меню, тогда будет плюс один скролл эффект
 	})
 	.setPin('.header',{pushFollowers: false})
 	.addTo(controller);
@@ -15,7 +15,7 @@ $(document).ready(function(){
 	var pinIntroScene2 = new ScrollMagic.Scene({
 		triggerElement: '.header',
 		triggerHook: 0,
-		duration: '200%'  // столько крутит до начала движения
+		duration: '150%'  // столько крутит до начала движения
 	})
 	.setPin('.main-text',{pushFollowers: false})
 	.addTo(controller);
@@ -23,7 +23,7 @@ $(document).ready(function(){
 	var pinIntroScene3 = new ScrollMagic.Scene({
 		triggerElement: '.header',
 		triggerHook: 0,
-		duration: '200%'  // столько крутит до начала движения
+		duration: '150%'  // столько крутит до начала движения
 	})
 	.setPin('.courses',{pushFollowers: false})
 	.addTo(controller);
@@ -31,7 +31,7 @@ $(document).ready(function(){
 	var pinIntroScene4 = new ScrollMagic.Scene({
 		triggerElement: '.header',
 		triggerHook: 0,
-		duration: '200%'  // столько крутит до начала движения
+		duration: '150%'  // столько крутит до начала движения
 	})
 	.setPin('.teachers',{pushFollowers: false})
 	.addTo(controller);
@@ -39,7 +39,7 @@ $(document).ready(function(){
 	var pinIntroScene5 = new ScrollMagic.Scene({
 		triggerElement: '.header',
 		triggerHook: 0,
-		duration: '200%'  // столько крутит до начала движения
+		duration: '150%'  // столько крутит до начала движения
 	})
 	.setPin('.our-students',{pushFollowers: false})
 	.addTo(controller);
@@ -47,7 +47,7 @@ $(document).ready(function(){
 	var pinIntroScene5 = new ScrollMagic.Scene({
 		triggerElement: '.header',
 		triggerHook: 0,
-		duration: '200%'  // столько крутит до начала движения
+		duration: '150%'  // столько крутит до начала движения
 	})
 	.setPin('.find-us',{pushFollowers: false})
 	.addTo(controller);
