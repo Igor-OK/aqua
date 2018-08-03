@@ -550,7 +550,7 @@ svg {
  .teacher-photo.photo-down.hidden{
     opacity: 0;
  }
-  .teacher-photo.photo-up{
+ .teacher-photo.photo-up{
     opacity: 0;
  }
  .teacher-photo.photo-up.active{
@@ -601,6 +601,74 @@ svg {
   z-index: 1;
 }
 
+@media screen and (max-width: 640px) { 
+  .teachers{
+    height: 550px;
+  }
+  .balls{
+    height: 500px;
+    width: 80%;
+    top: 10px;
+    left: 10%;
+  }
+  .balls-wrapper{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: -150px;
+    left: 0;
+    overflow: hidden;
+  }
+  .teachers .description .teacher{
+    width: auto;
+    background-color: transparent;
+    /*display: none;*/
+  }
+  .teacher-photo{
+    top: 150px;
+  }
+  .teachers .description{
+    left: 5%;
+    top: 320px;
+    width: 90%;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+  .teachers .description .teacher .about-teacher{
+    display: none;
+  }
+  .teachers .description .teacher.active .about-teacher{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .teacher .name{
+    background-color: lightgrey;
+  } 
+  .teacher.active .name{
+    background-color: white;
+  }
+  .teacher.natasha .name{
+    left: 5%;
+   }
+  .teacher.nastya .name{
+    left: 35%;
+  }
+  .teacher.yana .name{
+    left: 65%;
+  }
+
+  .teacher-photo{
+    left: 5%;
+    width: 90%;
+  }
+  .teacher-photo img{
+    width: 100%;
+  }
+}
+
+
 
 /*----------------------OUR STUDENTS section*/
 
@@ -621,8 +689,10 @@ svg {
   cursor: pointer;
   max-height: 180px;
 }
-@media screen and (max-width: 1400px) { 
-
+@media screen and (max-width: 640px) { 
+  .our-students {
+    height: 720px;
+  }
 }
 
 

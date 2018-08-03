@@ -2,10 +2,13 @@ $(document).ready(function(){
 
 	var screenWidth  = document.documentElement.clientWidth;
 	var pinStep;
+	var headUp;
 	if (screenWidth <= 640){
 		pinStep = '80%';
+		headUp = 0.8;
 	} else {
 		pinStep = '150%';
+		headUp = 0.45;
 	}
 
 	//==============init Scrollmagic
@@ -118,7 +121,7 @@ $(document).ready(function(){
 	var imageScene1 = new ScrollMagic.Scene({
 		triggerElement: '.photo-down',
 		// duration: '130%', // use it for dissapearind at the top of the page
-		triggerHook: 0.45,    //trigger hook is in a bottom of a page (almost)
+		triggerHook: headUp,    //trigger hook is in a bottom of a page (almost)
 		// reverse: false
 		// to make play animation once you should delete duration and add 'reverse: false'
 	})
@@ -134,7 +137,7 @@ $(document).ready(function(){
 	var imageScene2 = new ScrollMagic.Scene({
 		triggerElement: '.photo-up',
 		// duration: '130%', // use it for dissapearind at the top of the page
-		triggerHook: 0.45,    //trigger hook is in a bottom of a page (almost)
+		triggerHook: headUp,    //trigger hook is in a bottom of a page (almost)
 		// reverse: false
 		// to make play animation once you should delete duration and add 'reverse: false'
 	})
@@ -182,7 +185,7 @@ $(document).ready(function(){
 	// =================Some random color-ball dancing around teachers
 
 	const colors = ["#3CC157", "#2AA7FF", "#A21FDF", "#FCBC0F", "#F85F36"];
-	const numBalls = 50;
+	const numBalls = 55;
 	const balls = [];
 	const ballContainer = document.querySelector('.teachers .balls');
 

@@ -8,6 +8,11 @@
 		width: 800px;
 	}
 }
+@media screen and (max-width: 640px) { 
+	#rg-gallery{
+		width: 90%;
+	}
+}
 .rg-image-wrapper{
 	position:relative;
 	padding:20px 30px;
