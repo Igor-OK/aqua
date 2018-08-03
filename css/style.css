@@ -754,6 +754,9 @@ svg {
   bottom: 30px;
   z-index: 22;
 }
+.mob{
+  display: none;
+}
 
 @media screen and (max-width: 1400px) { 
   .find-us .container{
@@ -764,7 +767,32 @@ svg {
   }
 
 }
-
+@media screen and (max-width: 640px) { 
+  .find-us{
+    height: 1145px;
+  }
+  .find-us .container {
+    left: 5%;
+    right: auto;
+  }
+  .ways-to-studio {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .find-us .for-map{
+    top: 800px;
+  }
+  .way {
+    width: auto;
+  }
+  .mob{
+    display: block;
+  }
+  .insta{
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
 
 
 
