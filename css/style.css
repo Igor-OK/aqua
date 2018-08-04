@@ -432,6 +432,12 @@ svg {
   color: white;
   background-color: rgba(0,0,0,0.55)
 }
+.courses a{
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 260px;
+}
 .courses-list{
   display: flex;
   justify-content: space-around;
@@ -503,6 +509,10 @@ svg {
 @media screen and (max-width: 640px) { 
   .courses h2{
     font-size: 0.9rem;
+  }
+  .courses a{
+    margin-bottom: 20px;
+    margin-left: auto;
   }
 }
 
@@ -652,7 +662,7 @@ svg {
     background-color: lightgrey;
   } 
   .teacher.active .name{
-    background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728);
+    background:#FCF6BA;
     border: 1px solid grey;
   }
   .teacher:not(.active) .name{
