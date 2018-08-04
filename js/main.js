@@ -3,8 +3,16 @@ $(document).ready(function(){
 	var screenWidth  = document.documentElement.clientWidth;
 	var pinStep;
 	var headUp;
+
+	var teacherN = Math.random();
+	var teacherNumber;
+
+	if(teacherN < 0.33) teacherNumber = 1;
+	else if(teacherN > 0.66) teacherNumber = 3;
+	else teacherNumber = 2;
+
 	if (screenWidth <= 640){
-		pinStep = '80%';
+		pinStep = '120%';
 		headUp = 0.8;
 	} else {
 		pinStep = '150%';
@@ -87,7 +95,7 @@ $(document).ready(function(){
 
 	var tweenGirl = TweenMax.to('.water-colour-gif', 1, {opacity:1, ease: Linear.easeNone});
 	var whiteUnderWear = new ScrollMagic.Scene({
-		offset: 555, //отступ
+		offset: 455, //отступ
 		duration: 300 // продолжение анимации
 	})
 	.setTween(tweenGirl)
@@ -224,6 +232,39 @@ $(document).ready(function(){
 	    }
 	  );
 	});
+
+
+
+// random activator of one of teacher when beginning
+	screenWidth 
+	 teacherNumber;
+
+	if (screenWidth <= 640 ){
+		if (teacherNumber===1){
+			$('.teacher.natasha').addClass('active')
+		}
+		if (teacherNumber===2){
+			$('.teacher.nastya').addClass('active')
+		}
+		if (teacherNumber===3){
+			$('.teacher.yana').addClass('active')
+		}
+	} 
+
+		
+
+	// handler for teacher-switcher
+
+	$('.teacher .name').click(function(event){
+		// console.log(event.target);
+		$('.teacher').removeClass('active');
+		// console.log($(this).parent());
+		$(this).parent().addClass('active');
+	});
+
+
+
+
 
 
 

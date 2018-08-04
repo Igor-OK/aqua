@@ -124,7 +124,7 @@ svg {
     height: 45%;
     width: 70%;
     left: 15%;
-    top: 45%;
+    top: 35%;
   }
 
 }
@@ -427,7 +427,7 @@ svg {
   background-image: url(../images/oboi-3.jpg);
   background-repeat: repeat;
 }
-.courses h2{
+.courses h1{
   margin-bottom: 50px;
   color: white;
   background-color: rgba(0,0,0,0.55)
@@ -462,7 +462,7 @@ svg {
   opacity:1;
   transform: scale(1) translateY(0);
 }
-.course-card h3{
+.course-card h2{
   margin: 0;
   line-height: 17px;
   margin-bottom: 10px;
@@ -501,7 +501,7 @@ svg {
 
 @media screen and (max-width: 640px) { 
   .courses h2{
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -629,10 +629,12 @@ svg {
   }
   .teachers .description{
     left: 5%;
-    top: 320px;
+    top: 305px;
     width: 90%;
-    background-color: white;
-    border: 2px solid grey;
+    height: 35%;
+    /*background-color: white;*/
+    background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728);
+    border: 1px solid grey;
     border-radius: 5px;
   }
   .teachers .description .teacher .about-teacher{
@@ -640,23 +642,37 @@ svg {
   }
   .teachers .description .teacher.active .about-teacher{
     display: block;
-    text-align: center;
     padding-top: 20px;
   }
   .teacher .name{
     background-color: lightgrey;
   } 
   .teacher.active .name{
-    background-color: white;
+    background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728);
+    border: 1px solid grey;
+  }
+  .teacher:not(.active) .name{
+    background: grey;
+    color: lightgrey;
+    border: 1px solid grey;
   }
   .teacher.natasha .name{
     left: 5%;
    }
+  .teacher.natasha .about-teacher{
+    text-align: left;
+  }
   .teacher.nastya .name{
     left: 35%;
   }
+  .teacher.nastya .about-teacher{
+    text-align: center;
+  }
   .teacher.yana .name{
     left: 65%;
+  }
+  .teacher.yana .about-teacher{
+    text-align: right;
   }
 
   .teacher-photo{
