@@ -604,6 +604,9 @@ svg {
 @media screen and (max-width: 640px) { 
   .teachers{
     height: 550px;
+    background: radial-gradient(white, #6dd5ed);
+    background-repeat: no-repeat;
+    margin-bottom: -30px;
   }
   .balls{
     height: 500px;
