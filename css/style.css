@@ -130,6 +130,172 @@ svg {
 }
 
 
+/*================menu section===================*/
+
+
+nav .menu{
+  position: fixed;
+  font-family: 'El Messiri', sans-serif;
+/*  height: 555px;
+  width: 180px;
+  border-radius: 30px 0 0 30px;*/
+
+  width: 370px;
+  height: 555px;
+  /*-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;*/
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+
+  right: -380px;
+
+  border: 1px solid #D0B293;
+  box-shadow: ;
+  /*right: -180px;*/
+  bottom: 20px;
+  background-image: url('../images/drevo.jpg');
+  transform: translateZ(0px);
+  -webkit-box-shadow: -8px 6px 29px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 6px 29px -6px rgba(0,0,0,0.75);
+  box-shadow: -8px 6px 29px -6px rgba(0,0,0,0.75);
+  z-index: 100;
+}
+.menu-btn{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn.activated{
+  /*width:200px;*/
+  /*border: 3px solid red;*/
+  border-radius: 50%;
+}
+.menu-btn.activated.about-us{
+  background-color: red;
+}
+.menu-btn.activated.courses-prices{
+  background-color: green;
+}
+.menu-btn.activated.super-teachers{
+  background-color: yellow;
+}
+.menu-btn.activated.students-work{
+  background-color: white;
+}
+.menu-btn.activated.contacts{
+  background-color: blue;
+}
+
+
+.menu-btn.animated-logo{
+  background-image: url(../images/logo2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 140px;
+  right: 170px;
+  bottom: 390px;
+  z-index: 101;
+}
+.menu-btn.animated-logo:hover{
+  transform: scale(1.1);
+}
+.menu-btn .circle{
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: 1px solid #D0B293;
+}
+
+.menu-btn .txt{
+  display: block;
+  padding-top: 20px;
+  padding-left: 7px;
+  padding-right: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn:hover .circle{
+  transform: scale(1.1);
+}
+.menu-btn:hover .txt{
+  font-size:1.2rem;
+  font-weight: bold;
+}
+
+.menu-btn.about-us{
+  left: 45px;
+  bottom: 375px;
+  z-index: 111;
+}
+.menu-btn.about-us .circle{
+  background-color: red;
+}
+
+.menu-btn.courses-prices{
+  left: 25px;
+  bottom: 305px;
+  z-index: 111;
+}
+.menu-btn.courses-prices .circle{
+  background-color: green;
+}
+
+.menu-btn.super-teachers{
+  left: 15px;
+  bottom: 235px;
+  z-index: 111;
+}
+.menu-btn.super-teachers .circle{
+  background-color: yellow;
+}
+
+.menu-btn.students-work{
+  left: 20px;
+  bottom: 160px;
+  z-index: 111;
+}
+.menu-btn.students-work .circle{
+  background-color: white;
+}
+
+.menu-btn.contacts{
+  left: 35px;
+  bottom: 90px;
+  z-index: 111;
+}
+.menu-btn.contacts .circle{
+  background-color: blue;
+}
+
+.menu-btn.activated .circle{
+  border: none;
+  background-color: transparent;
+}
+.menu-btn.activated .txt{
+  font-size: 1.1rem;
+  font-weight: bold;
+  transform: translateX(-20px);
+}
+
+.menu-btn.call-us{
+  left: 55px;
+  bottom: 25px;
+  z-index: 111;
+  text-align: right;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+}
+.menu-btn.call-us a{
+  text-decoration: none;
+  color: black;
+}
+.menu-btn.call-us .circle{
+  background-color: blue;
+}
+
+
+
 
 /*==============seo-text section=================*/
 .main-text{

@@ -103,6 +103,16 @@ $(document).ready(function(){
 	.addTo(controller)
 
 
+	var tweenMenu = TweenMax.to('nav .menu', 1, {right:-170, ease: Linear.easeNone});
+	var whiteUnderWear = new ScrollMagic.Scene({
+		offset: 555, //отступ
+		duration: 300 // продолжение анимации
+	})
+	.setTween(tweenMenu)
+	// .addIndicators(true)
+	.addTo(controller)
+
+
 	// ===============loop for appearing of courses-card
 	$('.course-card').each(function(){
 			//build a scene of appearing of courses (one by one)
@@ -236,8 +246,6 @@ $(document).ready(function(){
 
 
 // random activator of one of teacher when beginning
-	screenWidth 
-	 teacherNumber;
 
 	if (screenWidth <= 640 ){
 		if (teacherNumber===1){
@@ -251,7 +259,33 @@ $(document).ready(function(){
 		}
 	} 
 
-		
+
+	//MAIN MENU handler==========================
+	var goal='';
+
+	$('.menu-btn').click(function(event){
+		$('.menu-btn').removeClass('activated');
+
+		// console.log($(event.target).parent().attr('data-link'));
+
+// find for data-link attribute
+		if($(event.target).attr('data-link')){
+			goal = $(event.target).attr('data-link');
+		} else if ($(event.target).parent().attr('data-link')){
+			goal = $(event.target).parent().attr('data-link');
+		} else {
+			goal = '';
+		}
+
+		if (goal){
+			$('html, body').animate({
+		        scrollTop: $(goal).offset().top
+		    }, 1500);
+		}
+	 	
+		$(this).addClass('activated');
+	});
+
 
 	// handler for teacher-switcher
 
