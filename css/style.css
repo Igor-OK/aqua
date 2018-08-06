@@ -39,7 +39,7 @@ svg {
 }
 .under-animation{
   position: absolute;
-  z-index: 199;
+  z-index: 21;
   width: 100%;
   height: 100%;
   top: 0;
@@ -168,7 +168,7 @@ nav .menu{
 .menu-btn.activated{
   /*width:200px;*/
   /*border: 3px solid red;*/
-  border-radius: 50%;
+  border-radius: 28px 28px 28px 28px;
 }
 .menu-btn.activated.about-us{
   background-color: red;
@@ -212,7 +212,7 @@ nav .menu{
   padding-top: 20px;
   padding-left: 7px;
   padding-right: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .menu-btn:hover .circle{
   transform: scale(1.1);
@@ -274,11 +274,16 @@ nav .menu{
 .menu-btn.activated .txt{
   font-size: 1.1rem;
   font-weight: bold;
-  transform: translateX(-20px);
+  transform: translateX(-25px) translateY(-5px);
 }
 
-.menu-btn.call-us{
-  left: 55px;
+.menu-bt.call-us{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  left: 65px;
   bottom: 25px;
   z-index: 111;
   text-align: right;
@@ -286,14 +291,18 @@ nav .menu{
   font-weight: bold;
   line-height: 1.4rem;
 }
-.menu-btn.call-us a{
+.menu-bt.call-us a{
   text-decoration: none;
   color: black;
 }
-.menu-btn.call-us .circle{
+.menu-bt.call-us .circle{
   background-color: blue;
 }
-
+@media screen and (max-width: 640px) { 
+  nav .menu{
+    display: none;
+  }
+}
 
 
 

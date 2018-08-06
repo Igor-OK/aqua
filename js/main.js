@@ -257,7 +257,91 @@ $(document).ready(function(){
 		if (teacherNumber===3){
 			$('.teacher.yana').addClass('active')
 		}
-	} 
+	} ;
+
+
+	// on scroll handler for showing active menu label
+
+	var currentSection = 1; //(or maybe classname)
+	var curSec = 1; // for middle calculation
+	var currentPosition;
+	var blockirator = true; // for handlingmenu translations without graphic bugs
+
+	// special value forposition lag 1000formy noteBOOK
+	// скорее всего зависит от значения height=100%
+	var mrOffset = 980;
+
+
+	var section2 = $('.main-text').offset().top + mrOffset;
+	var section3 = $('.courses').offset().top + mrOffset;
+	var section4 = $('.teachers').offset().top + mrOffset;
+	var section5 = $('.our-students').offset().top + mrOffset;
+	var section6 = $('.find-us').offset().top + mrOffset;
+
+
+
+
+console.log(section2);
+console.log(section3);
+console.log(section4);
+console.log(section5);
+console.log(section6);
+
+function scroller(){
+		console.log($(window).scrollTop());
+		if (blockirator){
+			currentPosition = $(window).scrollTop();
+			// console.log(currentPosition);
+			if (currentPosition < section2){
+				curSec = 1; // hi
+				if (curSec !== currentSection){
+					currentSection = curSec;
+					$('.menu-btn').removeClass('activated');
+					$('.menu-btn.logo').addClass('activated');
+				}
+			} else if ((currentPosition < section3) && (currentPosition >= section2)){
+				curSec = 2; // seo
+				if (curSec !== currentSection){
+					currentSection = curSec;
+					$('.menu-btn').removeClass('activated');
+					$('.menu-btn.about-us').addClass('activated');
+				}
+			} else if ((currentPosition < section4) && (currentPosition >= section3)){
+				curSec = 3; // courses
+				if (curSec !== currentSection){
+					currentSection = curSec;
+					$('.menu-btn').removeClass('activated');
+					$('.menu-btn.courses-prices').addClass('activated');
+				}
+			} else if ((currentPosition < section5) && (currentPosition >= section4)){
+				curSec = 4; // teaches
+				if (curSec !== currentSection){
+					currentSection = curSec;
+					$('.menu-btn').removeClass('activated');
+					$('.menu-btn.super-teachers').addClass('activated');
+				}
+			} else if ((currentPosition < section6) && (currentPosition >= section5)){
+				curSec = 5; //students
+				if (curSec !== currentSection){
+					currentSection = curSec;
+					$('.menu-btn').removeClass('activated');
+					$('.menu-btn.students-work').addClass('activated');
+				}
+			} else if (currentPosition >= section6){
+				curSec = 6; //find us
+				if (curSec !== currentSection){
+					currentSection = curSec;
+					$('.menu-btn').removeClass('activated');
+					$('.menu-btn.contacts').addClass('activated');
+				}
+			}
+		}
+		
+	};
+
+	$(document).scroll(scroller);
+
+
 
 
 	//MAIN MENU handler==========================
@@ -268,7 +352,7 @@ $(document).ready(function(){
 
 		// console.log($(event.target).parent().attr('data-link'));
 
-// find for data-link attribute
+		// find for data-link attribute
 		if($(event.target).attr('data-link')){
 			goal = $(event.target).attr('data-link');
 		} else if ($(event.target).parent().attr('data-link')){
@@ -278,9 +362,13 @@ $(document).ready(function(){
 		}
 
 		if (goal){
+			blockirator = false;
 			$('html, body').animate({
 		        scrollTop: $(goal).offset().top
-		    }, 1500);
+		    }, 1500, function(){
+		    	blockirator = true;
+		    	scroller();
+		    });   
 		}
 	 	
 		$(this).addClass('activated');
