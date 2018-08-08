@@ -272,23 +272,20 @@ $(document).ready(function(){
 	var mrOffset = 980;
 
 
-	var section2 = $('.main-text').offset().top + mrOffset;
-	var section3 = $('.courses').offset().top + mrOffset;
+	var section2 = $('.courses').offset().top + mrOffset;
+	var section3 = $('.main-text').offset().top + mrOffset;
 	var section4 = $('.teachers').offset().top + mrOffset;
 	var section5 = $('.our-students').offset().top + mrOffset;
 	var section6 = $('.find-us').offset().top + mrOffset;
 
-
-
-
-console.log(section2);
-console.log(section3);
-console.log(section4);
-console.log(section5);
-console.log(section6);
+// console.log(section2);
+// console.log(section3);
+// console.log(section4);
+// console.log(section5);
+// console.log(section6);
 
 function scroller(){
-		console.log($(window).scrollTop());
+		// console.log($(window).scrollTop());
 		if (blockirator){
 			currentPosition = $(window).scrollTop();
 			// console.log(currentPosition);
@@ -300,18 +297,18 @@ function scroller(){
 					$('.menu-btn.logo').addClass('activated');
 				}
 			} else if ((currentPosition < section3) && (currentPosition >= section2)){
-				curSec = 2; // seo
-				if (curSec !== currentSection){
-					currentSection = curSec;
-					$('.menu-btn').removeClass('activated');
-					$('.menu-btn.about-us').addClass('activated');
-				}
-			} else if ((currentPosition < section4) && (currentPosition >= section3)){
-				curSec = 3; // courses
+				curSec = 2; // courses
 				if (curSec !== currentSection){
 					currentSection = curSec;
 					$('.menu-btn').removeClass('activated');
 					$('.menu-btn.courses-prices').addClass('activated');
+				}
+			} else if ((currentPosition < section4) && (currentPosition >= section3)){
+				curSec = 3; // seo
+				if (curSec !== currentSection){
+					currentSection = curSec;
+					$('.menu-btn').removeClass('activated');
+					$('.menu-btn.about-us').addClass('activated');
 				}
 			} else if ((currentPosition < section5) && (currentPosition >= section4)){
 				curSec = 4; // teaches

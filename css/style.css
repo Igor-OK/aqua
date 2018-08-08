@@ -170,10 +170,10 @@ nav .menu{
   /*border: 3px solid red;*/
   border-radius: 28px 28px 28px 28px;
 }
-.menu-btn.activated.about-us{
+.menu-btn.activated.courses-prices{
   background-color: red;
 }
-.menu-btn.activated.courses-prices{
+.menu-btn.activated.about-us{
   background-color: green;
 }
 .menu-btn.activated.super-teachers{
@@ -222,21 +222,21 @@ nav .menu{
   font-weight: bold;
 }
 
-.menu-btn.about-us{
+.menu-btn.courses-prices{
   left: 45px;
   bottom: 375px;
   z-index: 111;
 }
-.menu-btn.about-us .circle{
+.menu-btn.courses-prices .circle{
   background-color: red;
 }
 
-.menu-btn.courses-prices{
+.menu-btn.about-us{
   left: 25px;
   bottom: 305px;
   z-index: 111;
 }
-.menu-btn.courses-prices .circle{
+.menu-btn.about-us .circle{
   background-color: green;
 }
 
@@ -309,7 +309,7 @@ nav .menu{
 /*==============seo-text section=================*/
 .main-text{
   color:white;
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/
   height: 1950px;
 }
 .main-text h2{
@@ -328,7 +328,7 @@ nav .menu{
   display: block;
   width: 100%;
   height: 1950px;
-  margin-top: -1px;
+  margin-top: -30px;
 }
 
 /*offset to left for 30px*/
@@ -501,10 +501,10 @@ nav .menu{
     left: auto;
   }
   .main-text{
-    height: 1750px;
+    height: 1725px;
   }
   #canvas-basic {
-    height: 1750px;
+    height: 1725px;
   }
 }
 @media screen and (max-width: 640px) { 
@@ -597,21 +597,27 @@ nav .menu{
 /*============== courses-section ===============*/
 .courses{
   margin-top:-30px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   /*background-color: #EDEDED;*/
   background-image: url(../images/oboi-3.jpg);
   background-repeat: repeat;
+}
+.courses .container{
+  padding-top: 20px;
 }
 .courses h1{
   margin-bottom: 50px;
   color: white;
   background-color: rgba(0,0,0,0.55)
 }
-.courses a{
+.courses a.pdf-link{
   text-align: center;
   display: inline-block;
   margin-bottom: 30px;
   margin-left: 260px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
 }
 .courses-list{
   display: flex;
@@ -681,11 +687,17 @@ nav .menu{
   box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);*/
 }
 
+@media screen and (max-width: 1400px){
+  .courses a.pdf-link {
+    margin-left: 209px;
+  }
+}
+
 @media screen and (max-width: 640px) { 
   .courses h2{
     font-size: 0.9rem;
   }
-  .courses a{
+  .courses a.pdf-link{
     margin-bottom: 20px;
     margin-left: auto;
   }
@@ -716,7 +728,6 @@ nav .menu{
 }
 .teachers .container{
   z-index: 10;
-  margin-top: -30px;
   padding-top: 15px;
 
 } 
