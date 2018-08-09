@@ -1,0 +1,8 @@
+User-agent: Yandex
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Host: http://студия-акварель.бел
+Sitemap: http://студия-акварель.бел/sitemap.xml
