@@ -168,22 +168,32 @@ nav .menu{
 .menu-btn.activated{
   /*width:200px;*/
   /*border: 3px solid red;*/
-  border-radius: 28px 28px 28px 28px;
+  /*border-radius: 28px 28px 28px 28px;*/
 }
 .menu-btn.activated.courses-prices{
-  background-color: red;
+  background-image: url(../images/blob-red-plus.png);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .menu-btn.activated.about-us{
-  background-color: green;
+  background-image: url(../images/blob-green-plus.png);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .menu-btn.activated.super-teachers{
-  background-color: yellow;
+  background-image: url(../images/blob-yellow-plus.png);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .menu-btn.activated.students-work{
-  background-color: white;
+  background-image: url(../images/blob-white-plus.png);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .menu-btn.activated.contacts{
-  background-color: blue;
+  background-image: url(../images/blob-blue-plus.png);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 
@@ -203,8 +213,8 @@ nav .menu{
 .menu-btn .circle{
   height: 55px;
   width: 55px;
-  border-radius: 50%;
-  border: 1px solid #D0B293;
+  /*border-radius: 50%;*/
+  /*border: 1px solid #D0B293;*/
 }
 
 .menu-btn .txt{
@@ -215,7 +225,7 @@ nav .menu{
   transition: all 0.2s ease-in-out;
 }
 .menu-btn:hover .circle{
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
 }
 .menu-btn:hover .txt{
   font-size:1.2rem;
@@ -226,45 +236,69 @@ nav .menu{
   left: 45px;
   bottom: 375px;
   z-index: 111;
+  background-image: url(../images/blob-red.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.menu-btn.activated.courses-prices .txt{
+  color: white;
 }
 .menu-btn.courses-prices .circle{
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .menu-btn.about-us{
   left: 25px;
   bottom: 305px;
   z-index: 111;
+  background-image: url(../images/blob-green.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.menu-btn.activated.about-us .txt{
+  color: white;
 }
 .menu-btn.about-us .circle{
-  background-color: green;
+  /*background-color: green;*/
 }
 
 .menu-btn.super-teachers{
   left: 15px;
   bottom: 235px;
   z-index: 111;
+  background-image: url(../images/blob-yellow.png);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .menu-btn.super-teachers .circle{
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .menu-btn.students-work{
   left: 20px;
   bottom: 160px;
   z-index: 111;
+  background-image: url(../images/blob-white.png);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .menu-btn.students-work .circle{
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .menu-btn.contacts{
   left: 35px;
   bottom: 90px;
   z-index: 111;
+  background-image: url(../images/blob-blue.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.menu-btn.activated.contacts .txt{
+  color: white;
 }
 .menu-btn.contacts .circle{
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 .menu-btn.activated .circle{
@@ -274,7 +308,13 @@ nav .menu{
 .menu-btn.activated .txt{
   font-size: 1.1rem;
   font-weight: bold;
-  transform: translateX(-25px) translateY(-5px);
+  transform: translateX(-45px) translateY(-5px);
+}
+/*.menu-btn.activated.students-work .txt{
+  transform: translateX(-45px) translateY(-5px);
+}*/
+.menu-btn.activated.contacts .txt{
+  transform: translateX(-55px) translateY(-5px);
 }
 
 .menu-bt.call-us{
@@ -730,6 +770,7 @@ nav .menu{
 .teachers .container{
   z-index: 10;
   padding-top: 15px;
+  margin-top: 0;
 
 } 
 .teacher-photo{
@@ -900,6 +941,7 @@ nav .menu{
 }
 .our-students .container{
   padding-top: 25px;
+  margin-top: 0;
 }
 .way img{
   max-width: 100%;
