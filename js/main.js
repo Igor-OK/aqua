@@ -102,15 +102,26 @@ $(document).ready(function(){
 	// .addIndicators(true)
 	.addTo(controller)
 
-
-	var tweenMenu = TweenMax.to('nav .menu', 1, {right:-170, ease: Linear.easeNone});
-	var whiteUnderWear = new ScrollMagic.Scene({
-		offset: 555, //отступ
-		duration: 300 // продолжение анимации
-	})
-	.setTween(tweenMenu)
-	// .addIndicators(true)
-	.addTo(controller)
+	if (screenWidth <= 640){
+		var tweenMenu = TweenMax.to('nav .menu', 1, {bottom:-70, ease: Linear.easeNone});
+		var whiteUnderWear = new ScrollMagic.Scene({
+			offset: 505, //отступ
+			duration: 300 // продолжение анимации
+		})
+		.setTween(tweenMenu)
+		// .addIndicators(true)
+		.addTo(controller)
+	} else {
+		var tweenMenu = TweenMax.to('nav .menu', 1, {right:-170, ease: Linear.easeNone});
+		var whiteUnderWear = new ScrollMagic.Scene({
+			offset: 555, //отступ
+			duration: 300 // продолжение анимации
+		})
+		.setTween(tweenMenu)
+		// .addIndicators(true)
+		.addTo(controller)
+	}
+	
 
 
 	// ===============loop for appearing of courses-card
@@ -270,6 +281,10 @@ $(document).ready(function(){
 	// special value forposition lag 1000formy noteBOOK
 	// скорее всего зависит от значения height=100%
 	var mrOffset = 980;
+
+	if (screenWidth <= 640){
+		mrOffset = 650;
+	}
 
 
 	var section2 = $('.courses').offset().top + mrOffset;
