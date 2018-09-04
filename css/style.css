@@ -32,7 +32,7 @@ h1, h2, h3{
   position: absolute;
   top: 150px;
   left: calc(50% - 350px);
-  transform: scale(2.5);
+  /*transform: scale(2.5);*/
 }
 svg {
   z-index: 1;
@@ -45,6 +45,8 @@ svg {
   top: 0;
   left: 0;
   background-color: white;
+  /*fallback*/
+  display: none;
 }
 
 .header{
@@ -54,6 +56,17 @@ svg {
   background-position: bottom;
   text-align: center;
   overflow: hidden;
+}
+.header-programm{
+  height: 100vh;
+  background-image: url(../images/work-space.jpg);
+  background-size: 150%;
+  background-position: bottom;
+}
+.header-programm .container{
+  background-color: white;
+  margin-top: 0!important;
+  padding: 20px;
 }
 .paper{
   width: 555px;
@@ -75,7 +88,7 @@ svg {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity:0;
+  /*opacity:0;*/
 }
 @media screen and (max-width: 1400px) {
   .header{
@@ -112,7 +125,7 @@ svg {
     height: 250px;
     top: 75px;
     left: calc(50% - 180px);
-    transform: scale(1.3);
+    /*transform: scale(1.3);*/
   }
   .paper{
     top: 20%;
@@ -145,11 +158,11 @@ nav .menu{
   /*-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;*/
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 
-  right: -380px;
+  /*right: -380px;*/
 
   border: 1px solid #D0B293;
   box-shadow: ;
-  /*right: -180px;*/
+  right: -170px;
   bottom: 20px;
   background-image: url('../images/drevo.jpg');
   transform: translateZ(0px);
@@ -348,8 +361,8 @@ nav .menu{
     border-radius: 110% 80%;
     /* right: 0; */
     left: -10%;
-    bottom: -170px;
-    /*bottom: -70px;*/
+    /*bottom: -170px;*/
+    bottom: -55px;
     box-shadow: 0px -7px 10px -6px rgba(0,0,0,0.65);
   }
   .menu-btn{
@@ -480,6 +493,9 @@ nav .menu{
   color:white;
   /*padding-bottom: 25px;*/
   height: 1950px;
+
+  /*fallback*/
+  position: relative;
 }
 .main-text h2{
   
@@ -771,11 +787,12 @@ nav .menu{
 
 /*============== courses-section ===============*/
 .courses{
-  /*margin-top:-30px;*/
-  /*padding-top: 30px;*/
-  /*background-color: #EDEDED;*/
   background-image: url(../images/oboi-3.jpg);
   background-repeat: repeat;
+
+  /*fallback*/
+  position: relative;
+  overflow: hidden;
 }
 .courses .container{
   padding-top: 20px;
@@ -805,26 +822,26 @@ nav .menu{
 }
 .course-card{
   display: block;
+  position: relative;
   width: 310px;
   height: 400px;
   /*cursor: pointer;*/
   margin-bottom: 55px;
   padding: 10px;
   background-color: white;
-  overflow: hidden;
   border: 1px solid grey;
   border-radius: 5px;
   display: inline-block;
-  opacity:0;
+  /*opacity:0;*/
   box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
-  transform: scale(0.87) translateY(-20px);
+  /*transform: scale(0.87) translateY(-20px);*/
   transition: all 0.3s ease-in-out;
 
 }
-.course-card.fade-in{
+/*.course-card.fade-in{
   opacity:1;
   transform: scale(1) translateY(0);
-}
+}*/
 .course-card h2{
   margin: 0;
   line-height: 15px;
@@ -834,6 +851,19 @@ nav .menu{
 .course-description{
 
 }
+.course-price{
+  position: absolute;
+  height: 25px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: yellow;
+  bottom: 10px;
+  right: -10px;
+  transition: all 0.3s ease-in-out;
+}
+.course-price p{
+  margin: 0;
+}
 .course-about p{
   margin: 0;
   line-height: 19px;
@@ -841,6 +871,7 @@ nav .menu{
 }
 .course-description{
   padding: 15px;
+  position: relative;
 }
 .course-image{
   height: 155px;
@@ -853,15 +884,19 @@ nav .menu{
   transition: all 0.3s ease-in-out;
 }
 .course-card:hover img{
-  /*transform: scale(1);*/
+  transform: scale(1);
+}
+.course-card:hover .course-price{
+  transform: scale(1.2);
 }
 .course-card:hover{
-  /*transition: all 0.3s ease-in-out;*/
-  /*transform: scale(1.05);*/
-/*  -webkit-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);*/
+  box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
 }
+
 
 @media screen and (max-width: 1400px){
   .courses a.pdf-link {
@@ -891,6 +926,9 @@ nav .menu{
 .teachers{
   display: block;
   height: 710px;
+
+  /*fallback*/
+  position: relative;
  }
  .balls{
   position: absolute;

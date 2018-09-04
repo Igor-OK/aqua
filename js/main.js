@@ -20,164 +20,167 @@ $(document).ready(function(){
 	}
 
 	//==============init Scrollmagic
-	var controller = new ScrollMagic.Controller();
+	// var controller = new ScrollMagic.Controller();
 
-	//==============pin the intro (thru all document)
-	var pinIntroScene = new ScrollMagic.Scene({
-		triggerElement: '.header',
-		triggerHook: 0,
-		duration: pinStep  // столько крутит до начала движения!!!!!!!!!!!!!!!!!!!!!!!!! 200%-поменять для всех блоков, когда сделаешь появляющееся меню, тогда будет плюс один скролл эффект
-	})
-	.setPin('.header',{pushFollowers: false})
-	.addTo(controller);
+	// //==============pin the intro and other sections (thru all document)
+	// var pinIntroScene = new ScrollMagic.Scene({
+	// 	triggerElement: '.header',
+	// 	triggerHook: 0,
+	// 	duration: pinStep  // столько крутит до начала движения!!!!!!!!!!!!!!!!!!!!!!!!! 200%-поменять для всех блоков, когда сделаешь появляющееся меню, тогда будет плюс один скролл эффект
+	// })
+	// .setPin('.header',{pushFollowers: false})
+	// .addTo(controller);
 
-	var pinIntroScene2 = new ScrollMagic.Scene({
-		triggerElement: '.header',
-		triggerHook: 0,
-		duration: pinStep  // столько крутит до начала движения
-	})
-	.setPin('.main-text',{pushFollowers: false})
-	.addTo(controller);
+	// var pinIntroScene2 = new ScrollMagic.Scene({
+	// 	triggerElement: '.header',
+	// 	triggerHook: 0,
+	// 	duration: pinStep  // столько крутит до начала движения
+	// })
+	// .setPin('.main-text',{pushFollowers: false})
+	// .addTo(controller);
 
-	var pinIntroScene3 = new ScrollMagic.Scene({
-		triggerElement: '.header',
-		triggerHook: 0,
-		duration: pinStep  // столько крутит до начала движения
-	})
-	.setPin('.courses',{pushFollowers: false})
-	.addTo(controller);
+	// var pinIntroScene3 = new ScrollMagic.Scene({
+	// 	triggerElement: '.header',
+	// 	triggerHook: 0,
+	// 	duration: pinStep  // столько крутит до начала движения
+	// })
+	// .setPin('.courses',{pushFollowers: false})
+	// .addTo(controller);
 
-	var pinIntroScene4 = new ScrollMagic.Scene({
-		triggerElement: '.header',
-		triggerHook: 0,
-		duration: pinStep  // столько крутит до начала движения
-	})
-	.setPin('.teachers',{pushFollowers: false})
-	.addTo(controller);
+	// var pinIntroScene4 = new ScrollMagic.Scene({
+	// 	triggerElement: '.header',
+	// 	triggerHook: 0,
+	// 	duration: pinStep  // столько крутит до начала движения
+	// })
+	// .setPin('.teachers',{pushFollowers: false})
+	// .addTo(controller);
 
-	var pinIntroScene5 = new ScrollMagic.Scene({
-		triggerElement: '.header',
-		triggerHook: 0,
-		duration: pinStep  // столько крутит до начала движения
-	})
-	.setPin('.our-students',{pushFollowers: false})
-	.addTo(controller);
+	// var pinIntroScene5 = new ScrollMagic.Scene({
+	// 	triggerElement: '.header',
+	// 	triggerHook: 0,
+	// 	duration: pinStep  // столько крутит до начала движения
+	// })
+	// .setPin('.our-students',{pushFollowers: false})
+	// .addTo(controller);
 
-	var pinIntroScene5 = new ScrollMagic.Scene({
-		triggerElement: '.header',
-		triggerHook: 0,
-		duration: pinStep  // столько крутит до начала движения
-	})
-	.setPin('.find-us',{pushFollowers: false})
-	.addTo(controller);
-
-	//================ Starting tween scene scrollmagic (already works)
-
-	var tweenHandyText = TweenMax.to('.start-animation', 1, {transform:'scale(1)', ease: Linear.easeNone});
-	var whiteUnderWear = new ScrollMagic.Scene({
-		offset: 0, //отступ
-		duration: 350 // продолжение анимации
-	})
-	.setTween(tweenHandyText)
-	// .addIndicators(true)
-	.addTo(controller)
+	// var pinIntroScene5 = new ScrollMagic.Scene({
+	// 	triggerElement: '.header',
+	// 	triggerHook: 0,
+	// 	duration: pinStep  // столько крутит до начала движения
+	// })
+	// .setPin('.find-us',{pushFollowers: false})
+	// .addTo(controller);
 
 
-	var tweenWhite = TweenMax.to('.under-animation', 1, {opacity:0, ease: Linear.easeNone});
-	var whiteUnderWear = new ScrollMagic.Scene({
-		offset: 200, //отступ
-		duration: 400 // продолжение анимации
-	})
-	.setTween(tweenWhite)
-	// .addIndicators(true)
-	.addTo(controller)
 
 
-	var tweenGirl = TweenMax.to('.water-colour-gif', 1, {opacity:1, ease: Linear.easeNone});
-	var whiteUnderWear = new ScrollMagic.Scene({
-		offset: 455, //отступ
-		duration: 300 // продолжение анимации
-	})
-	.setTween(tweenGirl)
-	// .addIndicators(true)
-	.addTo(controller)
+	// ================ Starting tween scene scrollmagic (already works)
 
-	if (screenWidth <= 640){
-		var tweenMenu = TweenMax.to('nav .menu', 1, {bottom:-70, ease: Linear.easeNone});
-		var whiteUnderWear = new ScrollMagic.Scene({
-			offset: 505, //отступ
-			duration: 300 // продолжение анимации
-		})
-		.setTween(tweenMenu)
-		// .addIndicators(true)
-		.addTo(controller)
-	} else {
-		var tweenMenu = TweenMax.to('nav .menu', 1, {right:-170, ease: Linear.easeNone});
-		var whiteUnderWear = new ScrollMagic.Scene({
-			offset: 555, //отступ
-			duration: 300 // продолжение анимации
-		})
-		.setTween(tweenMenu)
-		// .addIndicators(true)
-		.addTo(controller)
-	}
+	// var tweenHandyText = TweenMax.to('.start-animation', 1, {transform:'scale(1)', ease: Linear.easeNone});
+	// var whiteUnderWear = new ScrollMagic.Scene({
+	// 	offset: 0, //отступ
+	// 	duration: 350 // продолжение анимации
+	// })
+	// .setTween(tweenHandyText)
+	// // .addIndicators(true)
+	// .addTo(controller)
+
+
+	// var tweenWhite = TweenMax.to('.under-animation', 1, {opacity:0, ease: Linear.easeNone});
+	// var whiteUnderWear = new ScrollMagic.Scene({
+	// 	offset: 200, //отступ
+	// 	duration: 400 // продолжение анимации
+	// })
+	// .setTween(tweenWhite)
+	// // .addIndicators(true)
+	// .addTo(controller)
+
+
+	// var tweenGirl = TweenMax.to('.water-colour-gif', 1, {opacity:1, ease: Linear.easeNone});
+	// var whiteUnderWear = new ScrollMagic.Scene({
+	// 	offset: 455, //отступ
+	// 	duration: 300 // продолжение анимации
+	// })
+	// .setTween(tweenGirl)
+	// // .addIndicators(true)
+	// .addTo(controller)
+
+	// if (screenWidth <= 640){
+	// 	var tweenMenu = TweenMax.to('nav .menu', 1, {bottom:-70, ease: Linear.easeNone});
+	// 	var whiteUnderWear = new ScrollMagic.Scene({
+	// 		offset: 505, //отступ
+	// 		duration: 300 // продолжение анимации
+	// 	})
+	// 	.setTween(tweenMenu)
+	// 	// .addIndicators(true)
+	// 	.addTo(controller)
+	// } else {
+	// 	var tweenMenu = TweenMax.to('nav .menu', 1, {right:-170, ease: Linear.easeNone});
+	// 	var whiteUnderWear = new ScrollMagic.Scene({
+	// 		offset: 0, //отступ was 500
+	// 		duration: 100 // продолжение анимации ,was 300
+	// 	})
+	// 	.setTween(tweenMenu)
+	// 	// .addIndicators(true)
+	// 	.addTo(controller)
+	// }
 	
 
 
-	// ===============loop for appearing of courses-card
-	$('.course-card').each(function(){
-			//build a scene of appearing of courses (one by one)
-		var courseScene = new ScrollMagic.Scene({
-			triggerElement: this,
-			// duration: '130%', // use it for dissapearind at the top of the page
-			triggerHook: 1,    //trigger hook is in a bottom of a page (almost)
-			reverse: false
-			// to make play animation once you should delete duration and add 'reverse: false'
-		})
-		.setClassToggle(this, 'fade-in')
-		// .addIndicators({
-		// 	name: 'course scene',
-		// 	colorTrigger: 'black',
-		// 	colorStart: 'coral',
-		// 	colorEnd: 'pink'
-		// })
-		.addTo(controller);
-	});
+	// // ===============loop for appearing of courses-card
+	// $('.course-card').each(function(){
+	// 		//build a scene of appearing of courses (one by one)
+	// 	var courseScene = new ScrollMagic.Scene({
+	// 		triggerElement: this,
+	// 		// duration: '130%', // use it for dissapearind at the top of the page
+	// 		triggerHook: 1,    //trigger hook is in a bottom of a page (almost)
+	// 		reverse: false
+	// 		// to make play animation once you should delete duration and add 'reverse: false'
+	// 	})
+	// 	.setClassToggle(this, 'fade-in')
+	// 	// .addIndicators({
+	// 	// 	name: 'course scene',
+	// 	// 	colorTrigger: 'black',
+	// 	// 	colorStart: 'coral',
+	// 	// 	colorEnd: 'pink'
+	// 	// })
+	// 	.addTo(controller);
+	// });
 
 
 
 	//======================teachers-photo changing	
-	var imageScene1 = new ScrollMagic.Scene({
-		triggerElement: '.photo-down',
-		// duration: '130%', // use it for dissapearind at the top of the page
-		triggerHook: headUp,    //trigger hook is in a bottom of a page (almost)
-		// reverse: false
-		// to make play animation once you should delete duration and add 'reverse: false'
-	})
-	.setClassToggle('.photo-down', 'hidden')
-	// .addIndicators({
-	// 	name: 'img-down scene',
-	// 	colorTrigger: 'black',
-	// 	colorStart: 'coral',
-	// 	colorEnd: 'pink'
+	// var imageScene1 = new ScrollMagic.Scene({
+	// 	triggerElement: '.photo-down',
+	// 	// duration: '130%', // use it for dissapearind at the top of the page
+	// 	triggerHook: headUp,    //trigger hook is in a bottom of a page (almost)
+	// 	// reverse: false
+	// 	// to make play animation once you should delete duration and add 'reverse: false'
 	// })
-	.addTo(controller);
+	// .setClassToggle('.photo-down', 'hidden')
+	// // .addIndicators({
+	// // 	name: 'img-down scene',
+	// // 	colorTrigger: 'black',
+	// // 	colorStart: 'coral',
+	// // 	colorEnd: 'pink'
+	// // })
+	// .addTo(controller);
 
-	var imageScene2 = new ScrollMagic.Scene({
-		triggerElement: '.photo-up',
-		// duration: '130%', // use it for dissapearind at the top of the page
-		triggerHook: headUp,    //trigger hook is in a bottom of a page (almost)
-		// reverse: false
-		// to make play animation once you should delete duration and add 'reverse: false'
-	})
-	.setClassToggle('.photo-up', 'active')
-	// .addIndicators({
-	// 	name: 'img-down scene',
-	// 	colorTrigger: 'black',
-	// 	colorStart: 'coral',
-	// 	colorEnd: 'pink'
+	// var imageScene2 = new ScrollMagic.Scene({
+	// 	triggerElement: '.photo-up',
+	// 	// duration: '130%', // use it for dissapearind at the top of the page
+	// 	triggerHook: headUp,    //trigger hook is in a bottom of a page (almost)
+	// 	// reverse: false
+	// 	// to make play animation once you should delete duration and add 'reverse: false'
 	// })
-	.addTo(controller);
+	// .setClassToggle('.photo-up', 'active')
+	// // .addIndicators({
+	// // 	name: 'img-down scene',
+	// // 	colorTrigger: 'black',
+	// // 	colorStart: 'coral',
+	// // 	colorEnd: 'pink'
+	// // })
+	// .addTo(controller);
 	
 
 
@@ -280,12 +283,22 @@ $(document).ready(function(){
 
 	// special value forposition lag 1000formy noteBOOK
 	// скорее всего зависит от значения height=100%
-	var mrOffset = 980;
+	// var mrOffset = 980;
 
-	if (screenWidth <= 640){
-		mrOffset = 650;
-	}
+	// fallback
+	var mrOffset = -10;
 
+	// if (screenWidth <= 640){
+	// 	mrOffset = 650;
+	// }
+
+	var teachersLook = 0; // 0-смотрят вниз, 1 смотрят вверх
+	var currentTeachersLook = 0; //текущее, если оно меняется, то тогда меняем картинки
+	var tPosition = $('.teachers').offset().top;
+	var sPosition = $('.our-students').offset().top;
+	var half = ( sPosition - tPosition )/3;
+	var teacherEyesDown = document.querySelector('.photo-down');
+	var teacherEyesUp = document.querySelector('.photo-up');
 
 	var section2 = $('.courses').offset().top + mrOffset;
 	var section3 = $('.main-text').offset().top + mrOffset;
@@ -293,13 +306,27 @@ $(document).ready(function(){
 	var section5 = $('.our-students').offset().top + mrOffset;
 	var section6 = $('.find-us').offset().top + mrOffset;
 
-// console.log(section2);
-// console.log(section3);
-// console.log(section4);
-// console.log(section5);
-// console.log(section6);
 
 function scroller(){
+
+if (currentPosition > tPosition - half){
+	teachersLook = 1;
+	if (teachersLook !== currentTeachersLook){
+		currentTeachersLook = 1;
+		teacherEyesDown.style.opacity = 0;
+		teacherEyesUp.style.opacity = 1;
+	}
+} else {
+	teachersLook = 0;
+    if (teachersLook !== currentTeachersLook){
+		currentTeachersLook = 0;
+		teacherEyesDown.style.opacity = 1;
+		teacherEyesUp.style.opacity = 0;
+	}
+}
+
+
+
 		// console.log($(window).scrollTop());
 		if (blockirator){
 			currentPosition = $(window).scrollTop();
