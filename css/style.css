@@ -1010,7 +1010,8 @@ nav .menu{
 .teachers{
   display: block;
   height: 710px;
-
+  background: radial-gradient(white, #6dd5ed);
+  background-repeat: no-repeat;
   /*fallback*/
   position: relative;
  }
