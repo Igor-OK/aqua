@@ -183,7 +183,19 @@ svg {
 .table td{
   padding: 10px;
 }
+.wise-painter-said{
+  margin-left: 20%;
+  margin-right: 20%
+}
+.signature{
+  margin-left: 70%;
+}
 @media screen and (max-width: 640px) and (orientation:portrait) {
+  .header-programm .container{
+    padding:10px;
+    margin-left: 5vw;
+    width:90vw;
+  }
   .main-page-btn{
     height: 23vw;
     width: 23vw;
