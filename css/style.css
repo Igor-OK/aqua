@@ -1311,9 +1311,49 @@ nav .menu{
   }
 }
 
+/*========== TRANSPORT SECTION =========*/
+.transport{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  left:0;
+  /*background-color: #9d1c20;*/
+  background-color: white;
+  z-index: 1000;
+}
+.transport .container{
+  margin-top: 0;
+}
+.transport p{
+  margin:0;
+}
+.transport .metrostation,
+.transport .metro,
+.trall,
+.tralleibus,
+.bus,
+.busbus{
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 0.9;
+  padding-bottom: 5px;
+  font-weight: bold;
+  margin-left: 5px;
+  align-self: center;
+}
+.transport img{
+  height: 40px;
+  margin-left: 15px;
+}
 
-
-
+@media screen and (max-width: 640px) { 
+  .transport{
+    display: none;
+  }
 
 
 
