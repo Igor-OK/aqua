@@ -537,6 +537,7 @@ nav .menu{
   .menu-bt.call-us .txt{
     display: none;
   }
+  
   .menu-btn.activated.contacts .txt{
       color: black;
       transform: translateX(0) translateY(0);
@@ -909,7 +910,7 @@ nav .menu{
   position: relative;
   width: 310px;
   height: 400px;
-  /*cursor: pointer;*/
+  cursor: default;
   margin-bottom: 55px;
   padding: 10px;
   background-color: white;
@@ -920,7 +921,6 @@ nav .menu{
   box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
   /*transform: scale(0.87) translateY(-20px);*/
   transition: all 0.3s ease-in-out;
-
 }
 /*.course-card.fade-in{
   opacity:1;
@@ -932,8 +932,42 @@ nav .menu{
   font-size: 1rem;
   margin-bottom: 10px;
 }
+.course-card p{
+  cursor: default;
+}
 .course-description{
 
+}
+.to-see-the-programm{
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: auto;
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 1px;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: coral;
+  /*for animated fade-in*/
+  opacity:0;
+  transform: scale(0.5);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 3px 3px 6px -4px rgba(0,0,0,0.75);
+}
+.course-card:hover .to-see-the-programm{
+  opacity:1;
+  transform: scale(1);
+}
+.to-see-the-programm p{
+  margin: 0;
+  cursor: pointer;
+}
+.to-see-the-programm:hover{
+  background-color: red;
+  color: white;
 }
 .course-price{
   position: absolute;
@@ -942,8 +976,7 @@ nav .menu{
   padding: 5px;
   background-color: yellow;
   bottom: 10px;
-  right: -10px;
-  transition: all 0.3s ease-in-out;
+  right: 0;
 }
 .course-price p{
   margin: 0;
@@ -970,9 +1003,9 @@ nav .menu{
 .course-card:hover img{
   transform: scale(1);
 }
-.course-card:hover .course-price{
+/*.course-card:hover .course-price{
   transform: scale(1.2);
-}
+}*/
 .course-card:hover{
   transition: all 0.3s ease-in-out;
   transform: scale(1.05);
@@ -989,12 +1022,60 @@ nav .menu{
 }
 
 @media screen and (max-width: 640px) { 
+  .course-card{
+    width: auto;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+  .course-card.course-4,
+  .course-card.course-7,
+  .course-card.course-6{
+    height: 380px;
+  }
   .courses h2{
     font-size: 0.9rem;
+  }
+  .course-description{
+    padding: 0px;
+    padding-top: 10px;
   }
   .courses a.pdf-link{
     margin-bottom: 20px;
     margin-left: auto;
+  }
+  .course-card:hover img{
+    transform: scale(1);
+  }
+  .course-card:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    box-shadow: none;
+  }
+  .course-price{
+    height: 20px;
+  }
+  .to-see-the-programm{
+    left: 10px;
+    bottom: 10px;
+
+    height: 20px;
+    padding: 5px;
+
+    opacity:1;
+    transform: scale(1);
+    transition: none;
+  }
+  .course-card:hover .to-see-the-programm{
+    opacity:1;
+    transform: scale(1);
+  }
+  .to-see-the-programm p{
+    margin: 0;
+    cursor: pointer;
+  }
+  .to-see-the-programm:active{
+    background-color: green;
+    color: white;
   }
 }
 
@@ -1315,7 +1396,7 @@ nav .menu{
 /*========== TRANSPORT SECTION =========*/
 .transport{
   position: fixed;
-  
+  cursor: pointer;
   width: 100%;
   height: 40px;
   top: 0;
@@ -1380,8 +1461,8 @@ nav .menu{
 }
 
 
-/*-----------SVG-ANIMATION------------*/
 
+/*-----------SVG-ANIMATION------------*/
 
 .start-animation svg {
   max-width: 80%;

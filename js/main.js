@@ -382,6 +382,19 @@ if (currentPosition > tPosition - half){
 
 
 
+   //TRANSPORT handler !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+   	$('.link-to-contacts').click(function(){
+		$('html, body').animate({
+		        scrollTop: $('.find-us').offset().top
+		    }, 1500, function(){
+		    	blockirator = true;
+		    	scroller();
+		});
+	});
+
+
+
 
 	//MAIN MENU handler==========================
 	var goal='';
