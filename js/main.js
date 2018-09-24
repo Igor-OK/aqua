@@ -395,6 +395,25 @@ if (currentPosition > tPosition - half){
 
 
 
+	// running string will be made here
+
+	var freeLesson = document.querySelector('.free-lesson');
+
+	var timerId = setInterval(function() {
+		var txt = Math.random() > 0.5 ? '<p>Приходите на бесплатное пробное занятие!</p>' : '<p>Звоните! +375 (29) 66-33-164</p>';
+		console.log(txt);
+
+		if ($(freeLesson).hasClass('activated')){
+			$(freeLesson).removeClass('activated');
+		} else {
+			$('.free-lesson .container').html(txt);
+			$(freeLesson).addClass('activated');
+
+		}
+	}, 5555);
+
+
+
 
 	//MAIN MENU handler==========================
 	var goal='';

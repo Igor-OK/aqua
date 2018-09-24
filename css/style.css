@@ -1394,17 +1394,33 @@ nav .menu{
 }
 
 /*========== TRANSPORT SECTION =========*/
-.transport{
+.string-above-head{
   position: fixed;
   cursor: pointer;
   width: 100%;
   height: 40px;
+  background-color: white;
+  transition: all 1s ease-in-out;
+}
+.transport{
   top: 0;
   left:0;
   /*background-color: #9d1c20;*/
-  background-color: white;
   z-index: 1000;
   box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
+  /*transition: all 1s ease-in-out 3s;*/
+  /*transform: translateX(50%);*/
+}
+.free-lesson{
+  top: 0;
+  left:100vw;
+  z-index: 1001;
+  font-size: 1.7rem;
+  font-weight: bold;
+  /*color: red;*/
+}
+.free-lesson.activated{
+  left: 0vw;
 }
 .transport .container{
   margin-top: 5px;
@@ -1412,7 +1428,14 @@ nav .menu{
   justify-content: center;
   align-items: center;
 }
-.transport p{
+.free-lesson .container{
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transport p,
+.free-lesson p{
   margin:0;
 }
 .transport .metrostation,
