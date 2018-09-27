@@ -326,8 +326,8 @@ nav .menu{
 }
 
 .menu-btn.courses-prices{
-  left: 45px;
-  bottom: 375px;
+  left: 25px;
+  bottom: 300px;
   z-index: 111;
   background-image: url(../images/blob-red.png);
   background-position: left;
@@ -341,8 +341,8 @@ nav .menu{
 }
 
 .menu-btn.about-us{
-  left: 25px;
-  bottom: 305px;
+  left: 45px;
+  bottom: 375px;
   z-index: 111;
   background-image: url(../images/blob-green.png);
   background-position: left;
@@ -438,11 +438,11 @@ nav .menu{
     right: auto;
     width: 120%;
     height: 160px;
-    border-radius: 110% 80%;
+    border-radius: 100% 80%;
     /* right: 0; */
     left: -10%;
     /*bottom: -170px;*/
-    bottom: -70px;
+    bottom: -83px;
     box-shadow: 0px -7px 10px -6px rgba(0,0,0,0.65);
   }
   .menu-btn{
@@ -454,7 +454,7 @@ nav .menu{
     background-size: contain;
   }
   .menu-btn .txt {
-    padding-top: 15px;
+    padding-top: 3px;
     font-size: 0.8rem;
   }
 
@@ -465,6 +465,7 @@ nav .menu{
   .menu-btn.activated .txt{
     font-size: 0.85rem;
     font-weight: bold! important;
+    color: white;
     /*padding-top: ;*/
     transform: translateX(0) translateY(0);
   }
@@ -473,8 +474,8 @@ nav .menu{
     display: none;
   }
   .menu-btn.courses-prices{
-    left: 7%;
-    bottom: 70px;
+    left: 20%;
+    bottom: 90px;
     z-index: 111;
     background-image: url(../images/m-blob-red.png);
     background-position: top;
@@ -484,29 +485,29 @@ nav .menu{
   }
   .menu-btn.activated.courses-prices .txt{
     padding-top: 7px;
-    color: black;
+    color: white;
   }
 
   .menu-btn.about-us{
-    left: 20%;
+    left: 9%;
     bottom: 80px;
     background-image: url(../images/m-blob-green.png);
     background-position: top;
   }
   .menu-btn.activated.about-us .txt{
-    color: black;
+    /*color: black;*/
   }
 
   .menu-btn.super-teachers{
     left: 30%;
-    bottom: 85px;
+    bottom: 100px;
     background-image: url(../images/m-blob-yellow.png);
     background-position: top;
   }
 
   .menu-btn.students-work{
     left: 42%;
-    bottom: 95px;
+    bottom: 105px;
     background-image: url(../images/m-blob-white.png);
     background-position: top;
   }
@@ -515,20 +516,26 @@ nav .menu{
   }
   .menu-btn.contacts{
     left: 55%;
-    bottom: 90px;
+    bottom: 100px;
     background-image: url(../images/m-blob-blue.png);
     background-position: top;
   }
   .menu-bt.call-us{
-    left: 75%;
+    left: 69%;
     bottom: 83px;
     display: flex;
     flex-direction: column;
+  }
+  .menu-bt.call-us.call-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .menu-bt.call-us .circle-mob{
     display: block;
     width: 55px;
     height: 55px;
+    margin-left: calc(50% - 27px);
     border-radius: 50%;
     /*background-color: green;*/
     background-image: url(../images/call-us.png);
@@ -539,7 +546,7 @@ nav .menu{
   }
   
   .menu-btn.activated.contacts .txt{
-      color: black;
+      /*color: black;*/
       transform: translateX(0) translateY(0);
       font-weight: bold;
   }
@@ -594,7 +601,7 @@ nav .menu{
   display: block;
   width: 100%;
   height: 1950px;
-  margin-top: -30px;
+  margin-top: -1px;
 }
 
 /*offset to left for 30px*/
@@ -790,7 +797,7 @@ nav .menu{
   .main-text-content{
     width: 90%;
     right: 5%;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .main-text-content h1{
     font-size: 1.15rem;
@@ -868,12 +875,15 @@ nav .menu{
 
 /*============== courses-section ===============*/
 .courses{
-  background-image: url(../images/oboi-3.jpg);
+  /*background-image: url(../images/oboi-4.jpg);*/
   background-repeat: repeat;
-
+  background-color: lightgray;
   /*fallback*/
   position: relative;
   overflow: hidden;
+}
+.pdf{
+  text-align: center;
 }
 .courses .container{
   padding-top: 20px;
@@ -881,14 +891,13 @@ nav .menu{
 }
 .courses h1{
   margin-bottom: 50px;
-  color: white;
-  background-color: rgba(0,0,0,0.55)
+  margin-top:30px;
 }
 .courses a.pdf-link{
   text-align: center;
   display: inline-block;
   margin-bottom: 30px;
-  margin-left: 260px;
+/*  margin-left: 260px;*/
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
@@ -914,18 +923,11 @@ nav .menu{
   margin-bottom: 55px;
   padding: 10px;
   background-color: white;
-  border: 1px solid grey;
   border-radius: 5px;
   display: inline-block;
-  /*opacity:0;*/
-  box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
-  /*transform: scale(0.87) translateY(-20px);*/
+  box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.55);
   transition: all 0.3s ease-in-out;
 }
-/*.course-card.fade-in{
-  opacity:1;
-  transform: scale(1) translateY(0);
-}*/
 .course-card h2{
   margin: 0;
   line-height: 15px;
@@ -945,36 +947,26 @@ nav .menu{
   bottom: 10px;
   width: auto;
   height: 25px;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
   border-radius: 1px;
   padding: 5px;
   font-weight: bold;
   cursor: pointer;
-  background-color: coral;
-  /*for animated fade-in*/
-  opacity:0;
-  transform: scale(0.5);
   transition: all 0.2s ease-in-out;
-  box-shadow: 3px 3px 6px -4px rgba(0,0,0,0.75);
-}
-.course-card:hover .to-see-the-programm{
-  opacity:1;
-  transform: scale(1);
+  box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.55)
 }
 .to-see-the-programm p{
   margin: 0;
   cursor: pointer;
 }
 .to-see-the-programm:hover{
-  background-color: red;
-  color: white;
+  background-color: lightgrey;
 }
 .course-price{
   position: absolute;
   height: 25px;
   font-weight: bold;
   padding: 5px;
-  background-color: yellow;
   bottom: 10px;
   right: 0;
 }
@@ -997,21 +989,17 @@ nav .menu{
 }
 .course-image img{
   width: 100%;
-  transform: scale(1.13);
   transition: all 0.3s ease-in-out;
 }
 .course-card:hover img{
-  transform: scale(1);
+  transform: scale(1.1);
 }
 /*.course-card:hover .course-price{
   transform: scale(1.2);
 }*/
 .course-card:hover{
   transition: all 0.3s ease-in-out;
-  transform: scale(1.05);
-  -webkit-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 34px -4px rgba(0,0,0,0.75);
+  transform: scale(1.02);
 }
 
 
@@ -1080,17 +1068,11 @@ nav .menu{
 }
 
 
-
-
-
-
-
-
-
  /*================TEACHERS============*/
 .teachers{
   display: block;
-  height: 710px;
+  /*height: 710px;*/
+  height: 100vh;
   background: radial-gradient(white, #6dd5ed);
   background-repeat: no-repeat;
   /*fallback*/
@@ -1102,6 +1084,7 @@ nav .menu{
   width: 1000px;
   top: -150px;
   left: calc(50% - 450px);
+  pointer-events: none;
 }
 .teachers h2{
   margin-top: 40px;
@@ -1456,7 +1439,8 @@ nav .menu{
   margin-left: 15px;
 }
 @media screen and (max-width: 640px) { 
-  .transport{
+  .transport, 
+  .free-lesson{
     overflow: hidden;
     height: 30px;
   }
@@ -1473,6 +1457,15 @@ nav .menu{
     margin-left: 2px;
     line-height: 0.9rem;
   }
+  .running-string{
+    font-size: 0.88rem;
+    font-weight: bold;
+    padding-top: 7px;
+
+  }
+/*  .string-above-head{
+    height: 27px;
+  }*/
   .transport img{
     height: 25px;
     margin-left: 5px;

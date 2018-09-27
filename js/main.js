@@ -286,7 +286,7 @@ $(document).ready(function(){
 	// var mrOffset = 980;
 
 	// fallback
-	var mrOffset = -10;
+	var mrOffset = -20;
 
 	// if (screenWidth <= 640){
 	// 	mrOffset = 650;
@@ -300,8 +300,8 @@ $(document).ready(function(){
 	var teacherEyesDown = document.querySelector('.photo-down');
 	var teacherEyesUp = document.querySelector('.photo-up');
 
-	var section2 = $('.courses').offset().top + mrOffset;
-	var section3 = $('.main-text').offset().top + mrOffset;
+	var section2 = $('.main-text').offset().top + mrOffset;
+	var section3 = $('.courses').offset().top + mrOffset;
 	var section4 = $('.teachers').offset().top + mrOffset;
 	var section5 = $('.our-students').offset().top + mrOffset;
 	var section6 = $('.find-us').offset().top + mrOffset;
@@ -343,14 +343,14 @@ if (currentPosition > tPosition - half){
 				if (curSec !== currentSection){
 					currentSection = curSec;
 					$('.menu-btn').removeClass('activated');
-					$('.menu-btn.courses-prices').addClass('activated');
+					$('.menu-btn.about-us').addClass('activated');
 				}
 			} else if ((currentPosition < section4) && (currentPosition >= section3)){
 				curSec = 3; // seo
 				if (curSec !== currentSection){
 					currentSection = curSec;
 					$('.menu-btn').removeClass('activated');
-					$('.menu-btn.about-us').addClass('activated');
+					$('.menu-btn.courses-prices').addClass('activated');
 				}
 			} else if ((currentPosition < section5) && (currentPosition >= section4)){
 				curSec = 4; // teaches
@@ -401,7 +401,7 @@ if (currentPosition > tPosition - half){
 
 	var timerId = setInterval(function() {
 		var txt = Math.random() > 0.5 ? '<p>Приходите на бесплатное пробное занятие!</p>' : '<p>Звоните! +375 (29) 66-33-164</p>';
-		console.log(txt);
+		// console.log(txt);
 
 		if ($(freeLesson).hasClass('activated')){
 			$(freeLesson).removeClass('activated');
@@ -410,7 +410,7 @@ if (currentPosition > tPosition - half){
 			$(freeLesson).addClass('activated');
 
 		}
-	}, 5555);
+	}, 11111);
 
 
 
