@@ -413,7 +413,7 @@ nav .menu{
 .menu-bt.call-us{
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   left: 65px;
@@ -431,7 +431,9 @@ nav .menu{
 .menu-bt.call-us .circle{
   background-color: blue;
 }
-
+.to-call-mob{
+  display: none;
+}
 @media screen and (max-width: 640px) { 
   nav .menu{
     /*display: none;*/
@@ -447,6 +449,9 @@ nav .menu{
   }
   .menu-btn{
     flex-direction: column;
+  }
+  .to-call-mob{
+    display: block;
   }
   .menu-btn .circle{
     height: 25px;
@@ -875,9 +880,9 @@ nav .menu{
 
 /*============== courses-section ===============*/
 .courses{
-  /*background-image: url(../images/oboi-4.jpg);*/
+  background-image: url(../images/oboi-77.jpg);
   background-repeat: repeat;
-  background-color: lightgray;
+  /*background-color: lightgray;*/
   /*fallback*/
   position: relative;
   overflow: hidden;
@@ -1005,7 +1010,7 @@ nav .menu{
 
 @media screen and (max-width: 1400px){
   .courses a.pdf-link {
-    margin-left: 209px;
+    /*margin-left: 209px;*/
   }
 }
 
@@ -1073,7 +1078,7 @@ nav .menu{
   display: block;
   /*height: 710px;*/
   height: 100vh;
-  background: radial-gradient(white, #6dd5ed);
+  background: radial-gradient(white, #C9EFF8);
   background-repeat: no-repeat;
   /*fallback*/
   position: relative;
@@ -1255,16 +1260,19 @@ nav .menu{
 .our-students{
   height: 800px;
   /*background-color: coral;*/
-  background-image: url(../images/purple-wood.jpg);
+  background-image: url(../images/oboi-66.jpg);
   background-repeat: repeat;
 }
 .our-students h2{
-  color: white;
+  /*color: white;*/
   margin-top: 30px;
 }
 .our-students .container{
-  padding-top: 25px;
+  position: relative;
+  padding-top: 30px;
   margin-top: 0;
+  display: flex;
+  justify-content: center;
 }
 .way img{
   max-width: 100%;
