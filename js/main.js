@@ -400,7 +400,7 @@ if (currentPosition > tPosition - half){
 	var freeLesson = document.querySelector('.free-lesson');
 
 	var timerId = setInterval(function() {
-		var txt = Math.random() > 0.5 ? '<p>Приходите на бесплатное пробное занятие!</p>' : '<p>Звоните! +375 (29) 66-33-164</p>';
+		var txt = Math.random() > 0.5 ? '<p>Приходите на пробное занятие!</p>' : '<p>Звоните! +375 (29) 66-33-164</p>';
 		// console.log(txt);
 
 		if ($(freeLesson).hasClass('activated')){
