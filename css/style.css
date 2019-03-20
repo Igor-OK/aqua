@@ -143,7 +143,7 @@ svg {
   background-attachment: fixed;
 }
 .header-programm .container{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   /*position: absolute;*/
   margin-top: 0!important;
   padding: 20px;
@@ -166,6 +166,9 @@ svg {
   align-items: center;
   cursor: pointer;
 }
+.main-page-btn a{
+  text-decoration: none;
+}
 .main-page-btn:hover{
   transform: scale(1.1);
 }
@@ -176,7 +179,7 @@ svg {
   font-weight: bold;
   line-height: 1rem;
   width:7vw;
-  height: 5vw;
+  /*height: 5vw;*/
   text-decoration: none;
   color: black;
   padding-top: 15px;
@@ -191,11 +194,44 @@ svg {
 .signature{
   margin-left: 70%;
 }
+.t_numb{
+  width: 20%;
+}
+
+
+/*go flex in tables!*/
+.table-row{
+  display: flex;
+}
+.t_numb, .t_name, .t_desc, .t_time{
+  border: 1px solid grey;
+  padding: 3px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.head .t_numb, .head .t_name, .head .t_desc, .head .t_time{
+  border: none;
+  flex-direction: column;
+}
+.t_numb{
+  flex: 1 4 10%;
+}
+.t_name{
+  flex: 1 0 40%;
+}
+.t_desc{
+flex: 1 0 40%;
+}
+.t_time{
+flex: 1 4 10%;
+}
+
 @media screen and (max-width: 640px) and (orientation:portrait) {
   .header-programm .container{
     padding:10px;
-    margin-left: 5vw;
     width:90vw;
+    overflow: hidden;
   }
   .main-page-btn{
     height: 23vw;
@@ -203,7 +239,7 @@ svg {
   }
   .main-page-btn .btn-text{
     width:17vw;
-    height: 17vw;
+    /*height: 17vw;*/
     font-size: 0.7rem;
     line-height: 0.9rem;
     padding-top: 10px;
@@ -898,6 +934,8 @@ nav .menu{
 .courses h1{
   margin-bottom: 50px;
   margin-top:30px;
+  color: white;
+  text-shadow:3px 3px 1px rgba(0,0,0,0.55);
 }
 .courses a.pdf-link{
   text-align: center;
@@ -1362,6 +1400,10 @@ nav .menu{
 
 }
 @media screen and (max-width: 640px) { 
+  .main-page-btn{
+    right: -3vw;
+    top: -3vw;
+  }
   .find-us{
     height: 1145px;
   }
@@ -1493,7 +1535,7 @@ nav .menu{
   .free-lesson{
     background-color: #E7D0BC;
   }
-  
+
 }
 
 
