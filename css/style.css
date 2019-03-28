@@ -1119,7 +1119,7 @@ nav .menu{
 .teachers{
   display: block;
   /*height: 710px;*/
-  height: 100vh;
+  height: 110vh;
   background: radial-gradient(white, #C9EFF8);
   background-repeat: no-repeat;
   /*fallback*/
@@ -1306,7 +1306,8 @@ nav .menu{
   background-repeat: repeat;
 }
 .our-students h2{
-  /*color: white;*/
+  color: white;
+  text-shadow: 3px 3px 1px rgba(0,0,0,0.55); 
   margin-top: 30px;
 }
 .our-students .container{

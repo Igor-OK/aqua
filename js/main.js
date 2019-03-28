@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+
+	// loading of images to carousel
+	var allGallery = '';
+	var galleryOrder = [20, 19, 21, 23, 25, 26, 24, 22, 28, 29, 30, 31, 32, 33, 34, 1, 35, 36, 38, 37, 39, 40, 41, 42, 43, 44, 45, 46, 47, 49, 17, 9, 8, 7, 5, 2, 27, 48, 50, 51, 52, 53, 54, 55];
+
+	for(i=0; i<galleryOrder.length; i++){
+		let templateForGallery = `<li><a href="#"><img src="images/images/thumbs/${galleryOrder[i]}.jpg" data-large="images/images/${galleryOrder[i]}.jpg" data-description=""/></a></li>`;
+		allGallery += templateForGallery;
+	}
+	document.getElementById('ul-carousel').innerHTML = allGallery;
+	
+
+
+
 	var screenWidth  = document.documentElement.clientWidth;
 	var pinStep;
 	var headUp;
