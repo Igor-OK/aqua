@@ -23,19 +23,39 @@ h1, h2, h3{
   }
 }
 
+body{
+  position: relative;
+}
+.all{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index:1;
+}
+#canvas-basic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
 /*===========intro section============*/
 
 .start-animation{
   z-index: 200;
   width: 700px;
-  height: 30%;
+  height: 30vh;
   position: absolute;
-  top: 20%;
+  top: 20vh;
   left: calc(50% - 350px);
   /*transform: scale(2.5);*/
 }
 svg {
-  z-index: 1;
+  z-index: 2;
 }
 .under-animation{
   position: absolute;
@@ -51,10 +71,11 @@ svg {
 
 .header{
   height: 100vh;
-  /*background-image: url(../images/work-space.jpg);*/
-  background-image: url(../images/work-space-dark.jpg);
+  position: relative;
+
+/*  background-image: url(../images/work-space-dark.jpg);
   background-size: 110%;
-  background-position: bottom;
+  background-position: bottom;*/
   text-align: center;
   overflow: hidden;
 }
@@ -106,21 +127,21 @@ svg {
 
 @media screen and (max-width: 640px) { 
   .header{
-    background-image: url(../images/work-space-mob-dark.jpg);
+/*    background-image: url(../images/work-space-mob-dark.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom;*/
   }
   .start-animation{
-    width: 360px;
+    width: 300px!important;
     height: 250px;
     top: 0;
-    left: calc(50% - 180px);
+    left: calc(50% - 150px)!important;
     /*transform: scale(1.3);*/
   }
   .paper{
     top: 10%;
     width: 80%;
-    height: 87%;
+    height: 70%;
     left: 10%;
   }
   .water-colour-gif{
@@ -627,8 +648,8 @@ nav .menu{
   /*fallback*/
   position: relative;
 }
-.main-text h2{
-  
+.main-text h1{
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
 }
 .main-text-content{
   position: absolute;
@@ -638,12 +659,6 @@ nav .menu{
   right: calc(50% - 600px);
   margin-top: 40px;
   margin-bottom:10px;
-}
-#canvas-basic {
-  display: block;
-  width: 100%;
-  height: 1950px;
-  margin-top: -1px;
 }
 
 /*offset to left for 30px*/
@@ -819,7 +834,7 @@ nav .menu{
     height: 1725px;
   }
   #canvas-basic {
-    height: 1725px;
+    /*height: 1725px;*/
   }
 }
 @media screen and (max-width: 640px) { 
@@ -917,8 +932,8 @@ nav .menu{
 
 /*============== courses-section ===============*/
 .courses{
-  background-image: url(../images/oboi-77.jpg);
-  background-repeat: repeat;
+/*  background-image: url(../images/oboi-77.jpg);
+  background-repeat: repeat;*/
   /*background-color: lightgray;*/
   /*fallback*/
   position: relative;
@@ -935,7 +950,8 @@ nav .menu{
   margin-bottom: 50px;
   margin-top:30px;
   color: white;
-  text-shadow:3px 3px 1px rgba(0,0,0,0.55);
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
+  line-height: 1.7rem;
 }
 .courses a.pdf-link{
   text-align: center;
@@ -1061,6 +1077,7 @@ nav .menu{
     width: auto;
     height: 350px;
     margin-bottom: 30px;
+    z-index: 20;
   }
   .course-card.course-4,
   .course-card.course-7,
@@ -1120,8 +1137,8 @@ nav .menu{
   display: block;
   /*height: 710px;*/
   height: 110vh;
-  background: radial-gradient(white, #C9EFF8);
-  background-repeat: no-repeat;
+/*  background: radial-gradient(white, #C9EFF8);
+  background-repeat: no-repeat;*/
   /*fallback*/
   position: relative;
  }
@@ -1129,12 +1146,14 @@ nav .menu{
   position: absolute;
   height: 500px;
   width: 1000px;
-  top: -150px;
+  top: -80px;
   left: calc(50% - 450px);
   pointer-events: none;
 }
 .teachers h2{
   margin-top: 40px;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
 }
 .teachers .container{
   z-index: 10;
@@ -1152,29 +1171,29 @@ nav .menu{
   transition: all 0.55s ease-out;
   max-width: 800px
  }
- .teacher-photo.photo-down{
-    opacity: 1;
- }
- .teacher-photo.photo-down.hidden{
-    opacity: 0;
- }
- .teacher-photo.photo-up{
-    opacity: 0;
- }
- .teacher-photo.photo-up.active{
-    opacity: 1;
- }
- .teachers .description{
-  background-color: grey;
+.teacher-photo.photo-down{
+  opacity: 1;
+}
+.teacher-photo.photo-down.hidden{
+  opacity: 0;
+}
+.teacher-photo.photo-up{
+  opacity: 0;
+}
+.teacher-photo.photo-up.active{
+  opacity: 1;
+}
+.teachers .description{
+  background-color: lightgrey;
   display: flex;
   justify-content: space-around;
   position: absolute;
   top: 494px;
-  border-radius: 10px;
+  border-radius: 5px;
   z-index: 10;
   left: calc(50% - 390px);
- }
- .teacher .name{
+}
+.teacher .name{
   position: absolute;
   font-size: 1.1rem;
   padding: 1px 10px 1px 10px;
@@ -1182,38 +1201,43 @@ nav .menu{
   background-color: white;
   min-width: 70px;
   text-align: center;
-  border: 2px solid darkgrey;
-  border-radius: 5px;
- }
- .teacher.natasha .name{
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.55);
+}
+.teacher.natasha .name{
   left: 75px;
- }
-  .teacher.nastya .name{
+}
+.teacher.nastya .name{
   left: 345px;
- }
-  .teacher.yana .name{
+}
+.teacher.yana .name{
   left: 600px;
- }
- .teachers .description .teacher{
+}
+.teachers .description .teacher{
   width: 220px;
   padding: 10px;
   margin: 10px;
-  background-color: lightgrey;
-  border-radius: 5px;
-  font-size: 0.77rem
- }
+  background-color: #fff;
+  border-radius: 3px;
+  font-size: 0.77rem;
+
+}
+
 .ball {
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
   z-index: 1;
 }
+.balls-wrapper{
+  z-index: 10;
+}
 
 @media screen and (max-width: 640px) { 
   .teachers{
     height: 550px;
-    background: radial-gradient(white, #6dd5ed);
-    background-repeat: no-repeat;
+/*    background: radial-gradient(white, #6dd5ed);
+    background-repeat: no-repeat;*/
     margin-bottom: -30px;
   }
   .balls{
@@ -1243,10 +1267,11 @@ nav .menu{
     top: 305px;
     width: 90%;
     height: 35%;
-    background-color: #E7D0BC;
+    background-color: #fff;
     /*background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728);*/
-    border: 1px solid grey;
-    border-radius: 5px;
+    /*border: 1px solid grey;*/
+    border-radius: 3px;
+    /*box-shadow: 2px 2px 3px rgba(0,0,0,0.55);*/
   }
   .teachers .description .teacher .about-teacher{
     display: none;
@@ -1259,7 +1284,7 @@ nav .menu{
     background-color: lightgrey;
   } 
   .teacher.active .name{
-    background:#E7D0BC;
+    background:#fff;
     border: 1px solid grey;
   }
   .teacher:not(.active) .name{
@@ -1302,12 +1327,12 @@ nav .menu{
 .our-students{
   height: 800px;
   /*background-color: coral;*/
-  background-image: url(../images/oboi-66.jpg);
-  background-repeat: repeat;
+/*  background-image: url(../images/oboi-66.jpg);
+  background-repeat: repeat;*/
 }
 .our-students h2{
   color: white;
-  text-shadow: 3px 3px 1px rgba(0,0,0,0.55); 
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
   margin-top: 30px;
 }
 .our-students .container{
@@ -1324,7 +1349,7 @@ nav .menu{
 }
 @media screen and (max-width: 640px) { 
   .our-students {
-    height: 720px;
+    height: 90vh;
   }
 }
 
@@ -1339,12 +1364,17 @@ nav .menu{
   text-align: center;
   display: block; 
   position: absolute;
-  background: #ffffff;
+  /*background: #ffffff;*/
   /*ВКЛЮЧИТЬ ТУТ*/
+}
+.find-us h2{
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
 }
 .find-us h4{
   margin-top: 5px;
   margin-bottom: 5px;
+  color: white;
 }
 .find-us .adress{
   margin-bottom: 5px;
@@ -1356,17 +1386,25 @@ nav .menu{
 .way{
   width:320px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 3px solid white;
+/*  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;*/
   padding: 15px;
   padding-top: 0px;
 }
 .find-us p{
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 3px solid white;
+/*  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;*/
+  color: white;
+  font-weight: 400;
 }
 .find-us .phone{
   font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+.find-us .phone a{
+  color: white;
+  /*text-decoration: none;*/
 }
 .find-us .container{
   position: absolute;
@@ -1390,6 +1428,9 @@ nav .menu{
 .mob{
   display: none;
 }
+a.insta{
+  color: #fff;
+}
 
 @media screen and (max-width: 1400px) { 
   .find-us .container{
@@ -1397,6 +1438,10 @@ nav .menu{
   }
   .find-us .unp{
     bottom: 20px;
+  }
+  .start-animation{
+    width: 560px;
+    left: calc(50% - 280px);
   }
 
 }
@@ -1592,15 +1637,15 @@ nav .menu{
 /*-----------SVG-ANIMATION------------*/
 
 .start-animation svg {
-  max-width: 80%;
+  /*max-width: 80%;*/
   width: 100%;
   position: absolute;
-  top: 0;
+  /*top: 0;*/
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  top:70px;
+  top: 70px;
   z-index: 200;
   opacity: 0.55;
 }

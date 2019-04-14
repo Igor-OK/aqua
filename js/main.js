@@ -223,15 +223,16 @@ $(document).ready(function(){
 
 	// resize canvas for according content (.main text)
 	var gradientCanvas = document.getElementById('canvas-basic');
-	var mainText = document.querySelector('.main-text-content');
-	// gradientCanvas.style.height = mainText.offsetHeight+120+'px';
+	var body = document.querySelector('.find-us');
+	gradientCanvas.style.height = body.offsetTop  + body.offsetHeight+  'px';
 
 
 
 	// =================Some random color-ball dancing around teachers
 
-	const colors = ["#3CC157", "#2AA7FF", "#A21FDF", "#FCBC0F", "#F85F36"];
-	const numBalls = 55;
+	// const colors = ["#3CC157", "#2AA7FF", "#A21FDF", "#FCBC0F", "#F85F36"];
+	const colors = ["#ffffff"];
+	const numBalls = 35;
 	const balls = [];
 	const ballContainer = document.querySelector('.teachers .balls');
 
@@ -480,13 +481,13 @@ if (currentPosition > tPosition - half){
 	$('.from-matus').click(function (event) {
 	    var videoSrc = 'https://www.youtube.com/embed/uS4eDDe3pVg';
 	    event.preventDefault();
-	    $(this).html('<iframe width="320" height="180" src="' + videoSrc + '" frameborder="0" allowfullscreen></iframe>')
+	    $(this).html('<iframe width="100%" height="180" src="' + videoSrc + '" frameborder="0" allowfullscreen></iframe>')
 	});
 
 	$('.from-sport').click(function (event) {
 	    var videoSrc = 'https://www.youtube.com/embed/LvX8KUD-3BQ';
 	    event.preventDefault();
-	    $(this).html('<iframe width="320" height="180" src="' + videoSrc + '" frameborder="0" allowfullscreen></iframe>')
+	    $(this).html('<iframe width="100%" height="180" src="' + videoSrc + '" frameborder="0" allowfullscreen></iframe>')
 	}) 
 
 
