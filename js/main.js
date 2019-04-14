@@ -222,9 +222,9 @@ $(document).ready(function(){
 	});
 
 	// resize canvas for according content (.main text)
-	var gradientCanvas = document.getElementById('canvas-basic');
-	var body = document.querySelector('.find-us');
-	gradientCanvas.style.height = body.offsetTop  + body.offsetHeight+  'px';
+	// var gradientCanvas = document.getElementById('canvas-basic');
+	// var body = document.querySelector('.find-us');
+	// gradientCanvas.style.height = body.offsetTop  + body.offsetHeight+  'px';
 
 
 

@@ -35,11 +35,11 @@ body{
 }
 #canvas-basic {
   display: block;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   top: 0px;
   left: 0px;
-  width: 100%;
   z-index: 0;
 }
 
@@ -299,14 +299,13 @@ nav .menu{
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   /*right: -380px;*/
   border: 1px solid #D0B293;
-  box-shadow: ;
   right: -170px;
   bottom: 20px;
   background-image: url('../images/drevo.jpg');
   transform: translateZ(0px);
-  -webkit-box-shadow: -8px 6px 29px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: -8px 6px 29px -6px rgba(0,0,0,0.75);
-  box-shadow: -8px 6px 29px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -8px 6px 19px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 6px 19px -6px rgba(0,0,0,0.75);
+  box-shadow: -8px 6px 19px -6px rgba(0,0,0,0.75);
   z-index: 100;
 }
 .menu-btn{
@@ -841,10 +840,10 @@ nav .menu{
   .main-text{
     overflow: hidden;
   }
-  .main-text,
+/*  .main-text,
   #canvas-basic{
     height: 2750px;
-  }
+  }*/
   #canvas-basic{
     margin-top: 0;
   }
@@ -1192,6 +1191,7 @@ nav .menu{
   border-radius: 5px;
   z-index: 10;
   left: calc(50% - 390px);
+  box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.55);
 }
 .teacher .name{
   position: absolute;
@@ -1349,7 +1349,7 @@ nav .menu{
 }
 @media screen and (max-width: 640px) { 
   .our-students {
-    height: 90vh;
+    height: 110vh;
   }
 }
 
@@ -1451,7 +1451,9 @@ a.insta{
     top: -3vw;
   }
   .find-us{
-    height: 1145px;
+    height: 1200px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
+
   }
   .find-us .container {
     left: 5%;
@@ -1462,13 +1464,14 @@ a.insta{
     margin-top: 25px;
   }
   .find-us .for-map{
-    top: 800px;
+    top: 820px;
   }
   .way {
     width: auto;
   }
   .mob{
     display: block;
+    color: #fff;
   }
   .insta{
     display: inline-block;
