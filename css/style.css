@@ -47,11 +47,11 @@ body{
 
 .start-animation{
   z-index: 200;
-  width: 700px;
+  width: 560px;
   height: 30vh;
   position: absolute;
   top: 20vh;
-  left: calc(50% - 350px);
+  left: calc(50% - 280px);
   /*transform: scale(2.5);*/
 }
 svg {
@@ -1347,6 +1347,7 @@ nav .menu{
   max-width: 100%;
   cursor: pointer;
   max-height: 180px;
+  border: 5px solid white;
 }
 @media screen and (max-width: 640px) { 
   .our-students {
@@ -1425,6 +1426,9 @@ nav .menu{
   left: calc(50% - 120px);
   bottom: 30px;
   z-index: 22;
+}
+.map-container{
+  border-top: 5px solid white;
 }
 .mob{
   display: none;
