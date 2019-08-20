@@ -10,7 +10,7 @@ h1, h2, h3{
   width:1200px;
   margin:auto;
   margin-top: 30px;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 @media screen and (max-width: 1400px) { 
   .container{
@@ -196,7 +196,7 @@ svg {
 .main-page-btn .btn-text{
   /*display: inline-block;*/
   text-align: center;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   line-height: 1rem;
   width:7vw;
@@ -289,7 +289,7 @@ flex: 1 4 10%;
 
 nav .menu{
   position: fixed;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 /*  height: 555px;
   width: 180px;
   border-radius: 30px 0 0 30px;*/
@@ -640,15 +640,16 @@ nav .menu{
 
 /*==============seo-text section=================*/
 .main-text{
-  color:white;
+  color:rgba(0,0,0,0.87);
   /*padding-bottom: 25px;*/
-  height: 1950px;
+  height: 2150px;
 
   /*fallback*/
   position: relative;
 }
 .main-text h1{
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
+  font-size: 2rem;
+  color: #5a5a5a;
 }
 .main-text-content{
   position: absolute;
@@ -731,7 +732,8 @@ nav .menu{
 .main-block-4{
   display: block;
   position: absolute;
-  background-color: rgba(0,0,0,0.55);
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
   font-size: 16px;
 }
 
@@ -743,7 +745,8 @@ nav .menu{
 .main-img-6{
   display: block;
   position: absolute;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
 }
 
 .main-img-1 img,
@@ -770,26 +773,23 @@ nav .menu{
     padding: 15px;
     top: 120px;
     left: -40px;
-    line-height: 0.85rem;
   }
   .main-block-2{
     width: 500px;
     padding: 15px;
     top: 505px;
     right: 30px;
-    line-height: 0.85rem;
   }
   .main-block-3{
     width: 555px;
     padding: 15px;
     top: 1010px;
     left: -50px;
-    line-height: 0.85rem;
   }
   .main-block-4{
     width: 650px;
     padding: 15px;
-    top: 1350px;
+    top: 1440px;
     right: 100px;
   }
   .main-img-1{
@@ -830,7 +830,7 @@ nav .menu{
     left: auto;
   }
   .main-text{
-    height: 1725px;
+    height: 1800px;
   }
   #canvas-basic {
     /*height: 1725px;*/
@@ -950,8 +950,9 @@ nav .menu{
   margin-bottom: 50px;
   margin-top:30px;
   color: white;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
   line-height: 1.7rem;
+  font-size: 2rem;
+  color: #5a5a5a;
 }
 .courses a.pdf-link{
   text-align: center;
@@ -1152,8 +1153,8 @@ nav .menu{
 }
 .teachers h2{
   margin-top: 40px;
-  color: white;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
+  font-size: 1.7rem;
+  color: #5a5a5a;
 }
 .teachers .container{
   z-index: 10;
@@ -1332,8 +1333,8 @@ nav .menu{
   background-repeat: repeat;*/
 }
 .our-students h2{
-  color: white;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
+  font-size: 1.7rem;
+  color: #5a5a5a;
   margin-top: 30px;
 }
 .our-students .container{
@@ -1348,6 +1349,7 @@ nav .menu{
   cursor: pointer;
   max-height: 180px;
   border: 5px solid white;
+  box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
 }
 @media screen and (max-width: 640px) { 
   .our-students {
@@ -1370,13 +1372,14 @@ nav .menu{
   /*ВКЛЮЧИТЬ ТУТ*/
 }
 .find-us h2{
-  color: white;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
+  font-size: 1.7rem;
+  color: #5a5a5a;
 }
 .find-us h4{
   margin-top: 5px;
   margin-bottom: 5px;
-  color: white;
+  font-size: 1rem;
+  color: #5a5a5a;
 }
 .find-us .adress{
   margin-bottom: 5px;
@@ -1388,24 +1391,22 @@ nav .menu{
 .way{
   width:320px;
   text-align: center;
-/*  background-color: rgba(255, 255, 255, 0.9);
-  border: 3px solid white;*/
   padding: 15px;
   padding-top: 0px;
 }
 .find-us p{
-/*  background-color: rgba(255, 255, 255, 0.9);
-  border: 3px solid white;*/
-  color: white;
+  color: #5a5a5a;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 .find-us .phone{
   font-size: 1.5rem;
-  color: white;
+  font-weight: 600;
+  color: #000000;
   text-decoration: none;
 }
 .find-us .phone a{
-  color: white;
+  color: #000000;
   /*text-decoration: none;*/
 }
 .find-us .container{
@@ -1434,7 +1435,7 @@ nav .menu{
   display: none;
 }
 a.insta{
-  color: #fff;
+  color: #5a5a5a;
 }
 
 @media screen and (max-width: 1400px) { 
@@ -1457,8 +1458,6 @@ a.insta{
   }
   .find-us{
     height: 1200px;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.55);
-
   }
   .find-us .container {
     left: 5%;
@@ -1476,7 +1475,8 @@ a.insta{
   }
   .mob{
     display: block;
-    color: #fff;
+    font-size: 1.2rem;
+    color: #5a5a5a;
   }
   .insta{
     display: inline-block;

@@ -203,19 +203,16 @@ $(document).ready(function(){
 	var granimInstance = new Granim({
     element: '#canvas-basic',
 	    name: 'basic-gradient',
-	    direction: 'left-right',
+	    direction: 'top-bottom',
 	    opacity: [1, 1],
 	    isPausedWhenNotInView: true,
 	    states : {
 	        "default-state": {
 	            gradients: [
-	            	['#02AAB0', '#00CDAC'],
-	                ['#AA076B', '#61045F'],
-	                ['#DA22FF', '#9733EE'],
-	                ['#1c92d2', '#f2fcfe'],
-	                ['#ff9966', '#ff5e62'],
-	                ['#22c1c3', '#fdbb2d'],
-	                ['#fc4a1a', '#f7b733']
+	                ['#9733EE', '#9DFFC7'],
+	                ['#8EC5FC', '#c3fcf9'],
+	                ['#c3fcf9', '#ffffff']
+
 	            ]
 	        }
 	    }
