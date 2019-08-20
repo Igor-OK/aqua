@@ -200,23 +200,23 @@ $(document).ready(function(){
 
 
 	//==================animated gradient in canvas
-	var granimInstance = new Granim({
-    element: '#canvas-basic',
-	    name: 'basic-gradient',
-	    direction: 'top-bottom',
-	    opacity: [1, 1],
-	    isPausedWhenNotInView: true,
-	    states : {
-	        "default-state": {
-	            gradients: [
-	                ['#9733EE', '#9DFFC7'],
-	                ['#8EC5FC', '#c3fcf9'],
-	                ['#c3fcf9', '#ffffff']
+	// var granimInstance = new Granim({
+ //    element: '#canvas-basic',
+	//     name: 'basic-gradient',
+	//     direction: 'top-bottom',
+	//     opacity: [1, 1],
+	//     isPausedWhenNotInView: true,
+	//     states : {
+	//         "default-state": {
+	//             gradients: [
+	//                 ['#9733EE', '#9DFFC7'],
+	//                 ['#8EC5FC', '#c3fcf9'],
+	//                 ['#c3fcf9', '#ffffff']
 
-	            ]
-	        }
-	    }
-	});
+	//             ]
+	//         }
+	//     }
+	// });
 
 	// resize canvas for according content (.main text)
 	// var gradientCanvas = document.getElementById('canvas-basic');
