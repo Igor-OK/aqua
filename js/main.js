@@ -298,7 +298,7 @@ $(document).ready(function(){
 	// var mrOffset = 980;
 
 	// fallback
-	var mrOffset = -20;
+	var mrOffset = -40;
 
 	// if (screenWidth <= 640){
 	// 	mrOffset = 650;
