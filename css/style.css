@@ -454,7 +454,7 @@ nav .menu{
   background-repeat: no-repeat;
 }
 .menu-btn.activated.contacts .txt{
-  color: white;
+  color: black;
 }
 .menu-btn.contacts .circle{
   /*background-color: blue;*/
@@ -536,7 +536,7 @@ nav .menu{
   .menu-btn.activated .txt{
     font-size: 0.85rem;
     font-weight: bold! important;
-    color: white;
+    color: black;
     /*padding-top: ;*/
     transform: translateX(0) translateY(0);
   }
@@ -556,7 +556,7 @@ nav .menu{
   }
   .menu-btn.activated.courses-prices .txt{
     padding-top: 7px;
-    color: white;
+    color: black;
   }
 
   .menu-btn.about-us{
@@ -1179,10 +1179,10 @@ nav .menu{
   width: 100%;
   position: absolute;
   top: 100px;
-  left: calc(50% - 400px);
+  left: calc(50% - 280px);
   z-index: 10;
   transition: all 0.55s ease-out;
-  max-width: 800px
+  max-width: 587px
  }
 .teacher-photo.photo-down{
   opacity: 1;
@@ -1204,7 +1204,7 @@ nav .menu{
   top: 494px;
   border-radius: 5px;
   z-index: 10;
-  left: calc(50% - 390px);
+  left: calc(50% - 250px);
   box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.55);
 }
 .teacher .name{
@@ -1213,19 +1213,16 @@ nav .menu{
   padding: 1px 10px 1px 10px;
   top: -15px;
   background-color: white;
-  min-width: 70px;
+  min-width: 90px;
   text-align: center;
   border-radius: 2px;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.55);
 }
-.teacher.natasha .name{
+.teacher.nastya .name{
   left: 75px;
 }
-.teacher.nastya .name{
-  left: 345px;
-}
 .teacher.yana .name{
-  left: 600px;
+  left: 350px;
 }
 .teachers .description .teacher{
   width: 220px;
@@ -1249,7 +1246,7 @@ nav .menu{
 
 @media screen and (max-width: 640px) { 
   .teachers{
-    height: 550px;
+    height: 575px;
 /*    background: radial-gradient(white, #6dd5ed);
     background-repeat: no-repeat;*/
     margin-bottom: -30px;
@@ -1278,7 +1275,7 @@ nav .menu{
   }
   .teachers .description{
     left: 5%;
-    top: 305px;
+    top: 350px;
     width: 90%;
     height: 35%;
     background-color: #fff;
@@ -1313,13 +1310,13 @@ nav .menu{
     text-align: left;
   }
   .teacher.nastya .name{
-    left: 35%;
+    left: 10%;
   }
   .teacher.nastya .about-teacher{
-    text-align: center;
+    text-align: left;
   }
   .teacher.yana .name{
-    left: 65%;
+    left: 55%;
   }
   .teacher.yana .about-teacher{
     text-align: right;
@@ -1376,7 +1373,7 @@ nav .menu{
 
 .find-us{
   width: 100%;
-  height: 900px;
+  height: 1200px;
   text-align: center;
   display: block; 
   position: absolute;
@@ -1429,6 +1426,7 @@ nav .menu{
 }
 .find-us .social-networks {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .find-us .social-networks a {
   text-decoration: none;
@@ -1473,7 +1471,7 @@ nav .menu{
   z-index: 1;
   display: block;
   width: 100%;
-  top: 500px;
+  top: 600px;
 }
 .find-us .unp {
   position:absolute;
@@ -1507,7 +1505,7 @@ nav .menu{
     top: -3vw;
   }
   .find-us{
-    height: 1200px;
+    height: 1450px;
   }
   .find-us .container {
     left: 5%;
@@ -1518,7 +1516,7 @@ nav .menu{
     margin-top: 25px;
   }
   .find-us .for-map{
-    top: 820px;
+    top: 1010px;
   }
   .way {
     width: auto;

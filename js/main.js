@@ -21,8 +21,7 @@ $(document).ready(function(){
 	var teacherN = Math.random();
 	var teacherNumber;
 
-	if(teacherN < 0.33) teacherNumber = 1;
-	else if(teacherN > 0.66) teacherNumber = 3;
+	if(teacherN < 0.5) teacherNumber = 1;
 	else teacherNumber = 2;
 
 	if (screenWidth <= 640){
@@ -275,12 +274,9 @@ $(document).ready(function(){
 
 	if (screenWidth <= 640 ){
 		if (teacherNumber===1){
-			$('.teacher.natasha').addClass('active')
-		}
-		if (teacherNumber===2){
 			$('.teacher.nastya').addClass('active')
 		}
-		if (teacherNumber===3){
+		if (teacherNumber===2){
 			$('.teacher.yana').addClass('active')
 		}
 	} ;
