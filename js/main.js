@@ -1,5 +1,30 @@
 $(document).ready(function(){
 
+	//instafeed 	fe32e613e00d48adad3aa66b93bd89dc
+
+	  var userFeed = new Instafeed({
+	    get: 'user',
+	    userId: '8243394152',
+	    clientId: 'fe32e613e00d48adad3aa66b93bd89dc',
+		accessToken: '8243394152.1677ed0.04ee90ed44a34f74ab3e26e846de85c5',
+	    resolution: 'standard_resolution',
+	    template: '<div class="gallery-item"><a href="{{image}}" title="{{caption}}"><img alt="{{caption}}" src="{{image}}" /></a></div>',
+	    sortBy: 'most-recent',
+	    limit: 12,
+	    links: false
+	  });
+	  userFeed.run();
+
+	  // This will create a single gallery from all elements that have class "gallery-item"
+		$('.instagallery').magnificPopup({
+		  type: 'image',
+		  delegate: 'a',
+		  gallery:{
+		    enabled:true
+		  }
+		});
+
+
 
 	// loading of images to carousel
 	var allGallery = '';
