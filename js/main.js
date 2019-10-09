@@ -10,7 +10,7 @@ $(document).ready(function(){
 	    resolution: 'standard_resolution',
 	    template: '<div class="gallery-item"><a href="{{image}}" title="{{caption}}"><img alt="{{caption}}" src="{{image}}" /></a></div>',
 	    sortBy: 'most-recent',
-	    limit: 12,
+	    limit: 11,
 	    links: false
 	  });
 	  userFeed.run();

@@ -651,7 +651,7 @@ nav .menu{
 .main-text{
   color:rgba(0,0,0,0.87);
   /*padding-bottom: 25px;*/
-  height: 1770px;
+  height: 2200px;
 
   /*fallback*/
   position: relative;
@@ -670,15 +670,52 @@ nav .menu{
   margin-bottom:10px;
 }
 
+/*Insta!!!*/
+
+
+.insta-header-wrapper {
+  position: absolute;
+  top: 480px;
+  left: 135px;
+  z-index: 21;
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
+  color: #5a5a5a;
+  text-decoration: none;
+}
+.insta-header-wrapper a {
+  font-weight: bold;
+}
+
+.insta-header-image {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url('../images/social-networks.png');
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position-x: -3px;
+  background-position-y: -2px;
+}
+
+
+
 .instafeed {
   position: absolute;
-  height: 390px;
-  width: 480px;
-  padding-left: 20px;
+  box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
+  height: 360px;
+  width: 830px;
+  padding-left: 25px;
+  padding-top: 30px;
   background-color: white;
   z-index: 20;
-  top: 300px;
-  left: 100px;
+  top: 490px;
+  left: 150px;
 }
 
 #instafeed img {
@@ -689,8 +726,8 @@ nav .menu{
 .gallery-item {
   display: inline-block;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 145px;
+  height: 145px;
   margin-right: 20px;
   margin-top: 20px;
 }
@@ -699,24 +736,25 @@ nav .menu{
 .main-block-1{
   width: 630px;
   padding: 15px;
-  top: 470px;
+  top: 890px;
   left: -40px;
   z-index: 10;
 }
 .main-block-2{
   width: 500px;
   padding: 15px;
-  top: 855px;
+  top: 1275px;
   right: 30px;
   z-index: 11;
 }
 .main-block-3{
   width: 700px;
   padding: 15px;
-  top: 1160px;
+  top: 1580px;
   left: -150px;
   z-index: 12;
 }
+/*преимущества*/
 .main-block-4{
   width: 670px;
   padding: 15px;
@@ -726,33 +764,34 @@ nav .menu{
 .main-img-1{
   width: 530px;
   padding: 10px;
-  top: 490px;
+  top: 910px;
   right: 10px;
 }
 .main-img-2{
   width: 200px;
   padding: 10px;
-  top: 680px;
+  top: 1100px;
   right: 60px;
 }
 .main-img-3{
   width: 300px;
   padding: 10px;
-  top: 880px;
+  top: 1300px;
   left: -30px;
 }
 .main-img-4{
   width:300px;
   padding: 7px;
-  top: 1005px;
+  top: 1425px;
   left: 305px;
 }
 .main-img-5{
   width: 700px;
   padding: 10px;
-  top: 1390px;
+  top: 1810px;
   right: -80px;
 }
+/*Ульяна*/
 .main-img-6{
   width: 220px;
   padding: 10px;
@@ -796,6 +835,14 @@ nav .menu{
   .main-text-content{
     right: calc(50% - 400px);
   }
+  .instafeed {
+    top: 450px;
+    left: 10px;
+  }
+  .insta-header-wrapper {
+    top: 440px;
+    left: 0;
+  }
   .main-block-1,
   .main-block-2,
   .main-block-3,
@@ -805,66 +852,67 @@ nav .menu{
   .main-block-1{
     width: 400px;
     padding: 15px;
-    top: 120px;
+    top: 830px;
     left: -40px;
   }
   .main-block-2{
     width: 500px;
     padding: 15px;
-    top: 505px;
+    top: 1215px;
     right: 30px;
   }
   .main-block-3{
-    width: 555px;
+    width: 880px;
     padding: 15px;
-    top: 1010px;
+    top: 1720px;
     left: -50px;
   }
+  /*преимущества*/
   .main-block-4{
     width: 650px;
     padding: 15px;
-    top: 1440px;
-    right: 100px;
+    top: 140px;
+    right: 0;
   }
   .main-img-1{
     width: 450px;
     padding: 10px;
-    top: 140px;
+    top: 860px;
     right: 10px;
   }
   .main-img-2{
     width: 200px;
     padding: 10px;
-    top: 330px;
+    top: 1040px;
     right: 60px;
   }
   .main-img-3{
     width: 300px;
     padding: 10px;
-    top: 530px;
+    top: 1240px;
     left: -30px;
   }
   .main-img-4{
     width:200px;
     padding: 5px;
-    top: 735px;
+    top: 1445px;
     left: -5px;
   }
   .main-img-5{
     width: 700px;
     padding: 10px;
-    top: 888px;
+    top: 1580px;
     left: 25px;
   }
+  /*ульяна*/
   .main-img-6{
     width: 200px;
     padding: 10px;
-    top: 1100px;
-    right: 15px;
-    left: auto;
+    top: 170px;
+    left: -65px;
   }
   .main-text{
-    height: 1800px;
+    height: 2150px;
   }
   #canvas-basic {
     /*height: 1725px;*/
@@ -873,7 +921,7 @@ nav .menu{
 @media screen and (max-width: 640px) { 
   .main-text{
     overflow: hidden;
-    height: 3000px
+    height: 3400px
   }
 /*  .main-text,
   #canvas-basic{
@@ -896,23 +944,52 @@ nav .menu{
     top: 20px;
     z-index: 22;*/
   }
+
+  .instafeed {
+    top: 600px;
+    left: -7px;
+    height: 320px;
+    width: 293px;
+    padding-left: 20px;
+    overflow: hidden;
+  }
+  .insta-header-wrapper {
+    top: 575px;
+    left: 0;
+    width: 245px;
+    display: inline-block;
+    padding-left: 40px;
+    text-align: center;
+  }
+  .gallery-item {
+    height: 77px;
+    width: 77px;
+  }
+  .insta-header-image {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+
   .main-block-1{
     width: 90%;
-    top: 700px;
+    top: 1100px;
     left: 0;
     /*line-height: 0.85rem;*/
   }
   .main-block-2{
     width: 90%;
-    top: 1350px;
+    top: 1750px;
     right: 0;
   }
   .main-block-3{
     width: 90%;
     padding: 15px;
-    top: 1986px;
+    top: 2386px;
     left: 0;
   }
+
+  /*преимущества*/
   .main-block-4{
     width: 90%;
     top: 85px;
@@ -925,36 +1002,36 @@ nav .menu{
   .main-img-1{
     width: 110%;
     padding: 10px;
-    top: 530px;
+    top: 930px;
     right: -7%;
   }
   .main-img-2{
     width: 85px;
-    top: 1265px;
+    top: 1665px;
     right: -10%;
     z-index: 22;
   }
   .main-img-3{
     width: 85%;
-    top: 1220px;
+    top: 1620px;
     right: -5%;
   }
   .main-img-4{
     width: 65%;
-    top: 2740px;
+    top: 3155px;
     right: auto;
     left: 40%;
   }
   .main-img-5{
     width: 110%;
     padding: 10px;
-    top: 1910px;
+    top: 2310px;
     left: -5%;
   }
   .main-img-6{
     width: 45%;
-    top: 2670px;
-    right: 53%;
+    top: 3070px;
+    left: -10px;
   }
 
 }
