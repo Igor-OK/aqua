@@ -708,7 +708,7 @@ nav .menu{
 .instafeed {
   position: absolute;
   box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.55);
-  height: 360px;
+  height: 357px;
   width: 830px;
   padding-left: 25px;
   padding-top: 30px;
@@ -716,6 +716,7 @@ nav .menu{
   z-index: 20;
   top: 490px;
   left: 150px;
+  overflow: hidden;
 }
 
 #instafeed img {
