@@ -1035,6 +1035,32 @@ nav .menu{
     left: -10px;
   }
 
+  .unit {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 10px;
+  }
+  .unit-topic {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .header-programm .container {
+    background-color: transparent;
+  }
+
+  .unit-number, .unit-duration {
+    display: inline-block;
+    width: calc(50% - 10px);
+  }
+  .unit-duration {
+    text-align: right;
+  }
+
 }
 
 
